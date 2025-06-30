@@ -3651,7 +3651,9 @@ width: 300px;
   .home-footer {
     width: 64.2%;
     margin-left: -9.8rem;
-    gap:1rem
+    gap:1rem;
+     margin-left:0;
+    transform: none
   }
   .foot-1-section {
     display: flex;
@@ -3660,8 +3662,7 @@ width: 300px;
     gap: 2rem;
     margin-top: 1rem;
     margin-top: 1rem;
-    margin-left:0;
-    transform: none
+   
 }
 .foot-1-section h3 {
     font-size: 0.6rem;
