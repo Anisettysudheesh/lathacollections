@@ -1,0 +1,31 @@
+.homepage {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.collection {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.collection h2 {
+    color: #007BFF;
+}
+
+.collection p {
+    color: #555;
+}
+
+.collection img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
