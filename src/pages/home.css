@@ -881,251 +881,7 @@ transition: 0.4s ease-in-out;
 
 
 
-/* Specialties Section */
-/* .specialties-section {
-  display: inline-flex;
-  height: 386px;
-  max-width: 960px;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  margin: 0 auto;
-  width: 960px;
-  padding: 0 160px;
-}
 
-.specialties-spacer {
-  display: flex;
-  width: 960px;
-  padding: 4px 16px 12px 16px;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.specialties-spacer-inner {
-  align-self: stretch;
-  color: #0d1c14;
-  text-align: center;
-  font-feature-settings: "dlig" on;
-  font-family: "Inter";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  position: relative;
-}
-
-.specialties-content {
-  display: flex;
-  width: 960px;
-  padding: 40px 16px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 40px;
-  position: relative;
-    margin-left:16%
-}
-
-.specialties-header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  align-self: stretch;
-  position: relative;
-}
-
-.specialties-title-container {
-  display: flex;
-  width: 720px;
-  max-width: 720px;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-}
-
-.specialties-title {
-  align-self: stretch;
-  color: #0d1c14;
-  font-feature-settings: "dlig" on;
-  font-family: "Inter";
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 45px;
-  letter-spacing: -1px;
-  position: relative;
-  margin: 0;
-}
-
-.specialties-subtitle-container {
-  display: flex;
-  width: 720px;
-  max-width: 720px;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-}
-
-.specialties-subtitle {
-  align-self: stretch;
-  color: #0d1c14;
-  font-feature-settings: "dlig" on;
-  font-family: "Inter";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  position: relative;
-  margin: 0;
-}
-
-.specialties-cards-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  align-self: stretch;
-  position: relative;
-}
-.delivery-logo{
-  position:absolute;
-  right:-15px;
-  top:-46px;
-  width:350px;
-  height:250px;
-  z-index:10;
-  border-radius:20px;
-}
-.manufacturing-logo{
-  position:absolute;
-  right:0px;
-  top:9px;
-  width:350px;
-  height:250px;
-  z-index:10;
-  border-radius:20px;
-}
-.customer-logo{
-  position:absolute;
-  right:-15px;
-  top:-46px;
-  width:350px;
-  height:250px;
-  z-index:10;
-  border-radius:20px;
-}
-
-.specialties-cards-container {
-  display: flex;
-  align-items: flex-start;
-  flex: 1 0 0;
-  align-self: stretch;
-  position: relative;
-  flex-direction: column;
-  gap:4rem;
-  border-radius:20px;
- 
-}
-
-/* Specialty Card Styles */
-/* .specialty-card {
-  display: flex;
-  width: 100%;
-  padding: 16px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  align-self: stretch;
-  border-radius: 20px;
-  border: 1px solid #ccebdb;
-  background: #f7fcfa;
-  position: relative;
-  height:250px;
-   background-color: #FBF3E9;
-   justify-content: center;
- 
-}
-
-.card-icon-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  position: relative;
-}
-
-.card-icon-wrapper {
-  width: 30px;
-  flex: 1 0 0;
-  position: relative;
-}
-
-.card-icon {
-  width: 30px;
-  height: 30px;
-  fill: #0d1c14;
-  position: absolute;
-  left: 25px;
-  top: 0px;
-}
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 25px;
-  align-self: stretch;
-  position: relative;
-  width:50%;
-  position:relative;
-  z-index:1;
-}
-
-.card-title-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  position: relative;
- 
-}
-
-.card-title {
-  align-self: stretch;
-  color: #0d1c14;
-  font-feature-settings: "dlig" on;
-  font-family: "Inter";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
-  position: relative;
-  margin: 0;
-}
-
-.card-description-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  position: relative;
-}
-
-.card-description {
-  align-self: stretch;
-  color: black;
-  font-feature-settings: "dlig" on;
-  font-family: "Inter";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  position: relative;
-  margin: 0;
-  width:100%
-}   */
    /* Specialties Section */
 .specialties-section {
 display: flex;
@@ -1203,7 +959,7 @@ align-items: center;
 }
 
 .specialty-card-image {
-  width: 280px;
+  width: 300px;
   height: 200px;
   object-fit: cover;
   border-radius: 12px;
@@ -1212,24 +968,7 @@ align-items: center;
   background: #f5f5f5;
 }
 
-/* @media (max-width: 700px) {
-  .specialties-section {
-    max-width: 100%;
-    padding: 0 8px;
-  }
-  .specialty-card {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.2rem 1rem;
-    gap: 1rem;
-  }
-  .specialty-card-image {
-    width: 100%;
-    height: 160px;
-    margin-left: 0;
-    margin-top: 1rem;
-  }
-} */
+
 .address-section{
   display:flex;
   flex-direction: column;
@@ -1652,62 +1391,11 @@ margin-bottom:2rem
     height: 430px;
   }
   
-  .specialties-content {
-    width: 1200px;
-    padding: 50px 20px;
-    margin-left: 12%;
+  
+  .specialties-cards-wrapper{
+    width:70%
   }
-  
-  .specialties-title {
-    font-size: 42px;
-  }
-  
-  .specialties-subtitle {
-    font-size: 18px;
-    width: 100%;
-  }
-  
-  .specialty-card {
-    width: 100%;
-    height: 280px;
-  }
-  
-  .card-title {
-    font-size: 28px;
-    width: 100%;
-  }
-  
-  .card-description {
-    font-size: 18px;
-    width: 100%;
-  }
-  
-  .manufacturing-logo {
-    width: 400px;
-    height: 280px;
-    transform:translate(10%,15px);
-  }
-  
-  .delivery-logo, .customer-logo {
-    width: 400px;
-    height: 280px;
-    transform:translate(-10px,-40px);
-  }
-  
- 
-  
 
-  
-  .map {
-    width: 1000px;
-    height: 500px;
-    transform:translate(0%,0%);
-  }
-  
-  .home-footer {
-    width: 280%;
-    margin-left: -9.9rem;
-  }
   
   .foot-1-section h3 {
     font-size: 1.1rem;
@@ -1775,60 +1463,6 @@ margin-bottom:2rem
     pointer-events: none;
     width: 425px;
     height: 430px;
-  }
-  .specialties-section{
-    transform:translateX(-10%)
-
-  }
-  .specialties-content {
-    width: 960px;
-    padding: 40px 16px;
-    margin-left: 16%;
-  }
-  
-  .specialties-title {
-    font-size: 36px;
-  }
-  
-  .specialties-subtitle {
-    font-size: 16px;
-    width: 100%;
-  }
-  
-  .specialty-card {
-    width: 100%;
-    height: 250px;
-  }
-  
-  .card-title {
-    font-size: 25px;
-    width: 100%;
-  }
-  
-  .card-description {
-    font-size: 16px;
-    width: 100%;
-  }
-  
-  .manufacturing-logo {
-    width: 350px;
-    height: 250px;
-    transform:translate(0%,0px);
-  }
-  
-  .delivery-logo, .customer-logo {
-    width: 350px;
-    height: 250px;
-    transform:translate(-15px,0px);
-  }
-  
-
-  
-
-  .map {
-    width: 900px;
-    height: 450px;
-    transform:translate(0%,0%);
   }
   
   .home-footer {
@@ -2025,8 +1659,7 @@ margin-bottom:2rem
   }
   
   .home-footer {
-    width: 90%;
-    margin-left: -5rem;
+  gap:1rem;
   }
   
   .foot-1-section h3 {
@@ -2424,12 +2057,10 @@ transition: none;
   .map {
   
   }
-  
-  .home-footer {
-    width: 62.8%;
-    margin-left: -9.2rem;
+  .home-footer{
     gap:1rem
   }
+ 
   .foot-1-section{
     gap:1.4rem
   }
@@ -2742,96 +2373,67 @@ transition: none;
   transition: none;
   opacity:1
 }
-  .specialties-header {
-  
-    gap: 10px;
-    transform:translateY(-50%)
-   
-}
-.specialties-content {
-    display: flex
-;
-    width: 460px;
-    padding: 40px 16px;
+   .specialties-content {
+    width: 100vw;
+    padding: 1.5rem 0.5rem;
+    margin-left: 0;
+  }
+  .specialties-title {
+    font-size: 1.6rem;
+    gap: 3rem;
+  }
+  .specialties-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    width:100%
+  }
+  .specialties-cards-wrapper {
+    gap: 1.2rem;
+  }
+  .specialty-card {
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
-    position: relative;
-    margin-left: -22%;
-}
-.specialties-title {
-    font-size: 1.5rem;
-  
-}
-.specialties-subtitle {
-   
-    font-size: 14px;
-    transform:translateX(4%);
-    width:45%
- 
-}
-
-.specialties-cards-wrapper {
-    
-    gap: 1rem;
-    
-    
-}
-.specialties-cards-container {
-   
-   transform:translate(-6%,17%);
-    gap: 14rem;
-    
-}
-.specialty-card {
-    width: 80%;
-   
-    gap: 20px;
-  
-    height: 250px;
-    transform:translateY(-5%);
-    background-color:white;
-    border:none
-  
-}
-
-.card-title-container {
-  width:500px
-}
-  .card-title {
-    font-size: 20.8px;
-    width: 40.8%;
+    padding: 1.2rem 1rem;
+    gap: 0.5rem;
+    min-height: unset;
+    width: 100%;
+    height: auto;
   }
-  
-  .card-description {
-    font-size: 16.8px;
-    width: 252px;
+  .specialty-card-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
   }
-  
-  .manufacturing-logo {
-    width: 308px;
-    height: 208px;
-    transform:translate(-33.2%,-8.2%);
+  .specialty-card-content {
+    width: 100%;
+    margin-bottom: 0.5rem;
   }
-  
-  .delivery-logo, .customer-logo {
-    width: 308px;
-    height: 208px;
-    transform:translate(0%,-103.2%);
+  .specialty-card-content h3 {
+    font-size: 1.1rem;
+  }
+  .specialty-card-content p {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+  .specialty-card-image {
+    width: 100%;
+    height: 300px;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
   }
   
 
 
-  
+  .reels-heading-add{
+    width:50%
+  }
   .map {
-  
+    width:90%;
+   height:350px
+   
   }
   
-  .home-footer {
-    width: 62.8%;
-    margin-left: -9.2rem;
-    gap:1rem
-  }
+
   .foot-1-section{
     gap:1.4rem
   }
@@ -3208,7 +2810,7 @@ transition: none;
   }
   .specialty-card-image {
     width: 100%;
-    height: 160px;
+    height: 300px;
     margin-left: 0;
     margin-top: 0.5rem;
     margin-bottom: 0;
@@ -3557,97 +3159,64 @@ transition: none;
   opacity:1
 }
   
- .specialties-header {
-  
-    gap: 10px;
-    transform:translateY(-50%)
-   
-}
-.specialties-content {
-    display: flex
-;
-    width: 460px;
-    padding: 40px 16px;
+ .specialties-content {
+    width: 100vw;
+    padding: 1.5rem 0.5rem;
+    margin-left: 0;
+  }
+  .specialties-title {
+    font-size: 1.6rem;
+    gap: 3rem;
+  }
+  .specialties-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    width:100%
+  }
+  .specialties-cards-wrapper {
+    gap: 1.2rem;
+  }
+  .specialty-card {
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
-    position: relative;
-    margin-left: -22%;
-}
-.specialties-title {
-    font-size: 1.5rem;
-    transform:translateX(2%);
-}
-.specialties-subtitle {
-   
-    font-size: 14px;
-    transform:translateX(4%);
-    width:45%
- 
-}
+    padding: 1.2rem 1rem;
+    gap: 0.5rem;
+    min-height: unset;
+    width: 100%;
+    height: auto;
+  }
+  .specialty-card-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  .specialty-card-content {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .specialty-card-content h3 {
+    font-size: 1.1rem;
+  }
+  .specialty-card-content p {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+  .specialty-card-image {
+    width: 100%;
+    height: 300px;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  
 
-.specialties-cards-wrapper {
-    
-   
-    
-}
-.specialties-cards-container {
-   
-   transform:translate(-5%,17%);
-    gap: 14rem;
-    
-}
-.specialty-card {
-    width: 80%;
-   
-    gap: 20px;
-  
-    height: 250px;
-    transform:translateY(-5%);
-    background-color:white;
-    border:none
-  
-}
 
-.card-title-container {
-  width:500px
-}
-  .card-title {
-    font-size: 20.8px;
-    width: 40.8%;
+  .reels-heading-add{
+    width:50%
   }
-  
-  .card-description {
-    font-size: 16.8px;
-    width: 260px;
-  }
-  
-  .manufacturing-logo {
-    width: 308px;
-    height: 208px;
-    transform:translate(-35.2%,-8.2%);
-  }
-  
-  .delivery-logo, .customer-logo {
-    width: 308px;
-    height: 208px;
-    transform:translate(0%,-103.2%);
-  }
-  
-  .address-section {
-    transform: translate(-98.2%,20.8%);
-  }
-  
-  .reels-heading-add {
-    font-size: 2.08rem;
-    width: 212px;
-    transform: translateX(-65.2%);
-  }
-  
   .map {
-    width: 50.8%;
-    height: 302px;
-    transform:translate(7.8%,0%);
+    width:90%;
+   height:350px
+   
   }
   
   .home-footer {
@@ -3992,99 +3561,65 @@ transition: none;
   opacity:1
 }
   
- .specialties-header {
-  
-    gap: 10px;
-    transform:translateY(-50%)
-   
-}
-.specialties-content {
-    display: flex
-;
-    width: 460px;
-    padding: 40px 16px;
+  .specialties-content {
+    width: 100vw;
+    padding: 1.5rem 0.5rem;
+    margin-left: 0;
+  }
+  .specialties-title {
+    font-size: 1.6rem;
+    gap: 3rem;
+  }
+  .specialties-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    width:100%
+  }
+  .specialties-cards-wrapper {
+    gap: 1.2rem;
+  }
+  .specialty-card {
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
-    position: relative;
-    margin-left: -22%;
-}
-.specialties-title {
-    font-size: 1.5rem;
-    
-}
-.specialties-subtitle {
-   
-    font-size: 14px;
-    transform:translateX(4%);
-    width:45%
- 
-}
+    padding: 1.2rem 1rem;
+    gap: 0.5rem;
+    min-height: unset;
+    width: 100%;
+    height: auto;
+  }
+  .specialty-card-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  .specialty-card-content {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .specialty-card-content h3 {
+    font-size: 1.1rem;
+  }
+  .specialty-card-content p {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+  .specialty-card-image {
+    width: 100%;
+    height: 300px;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  
 
-.specialties-cards-wrapper {
-    
-  
-    
-}
-.specialties-cards-container {
-   
-   transform:translate(-6%,17%);
-    gap: 14rem;
-    
-}
-.specialty-card {
-    width: 80%;
-   
-    gap: 20px;
-  
-    height: 250px;
-    transform:translateY(-5%);
-    background-color:white;
-    border:none
-  
-}
 
-.card-title-container {
-  width:500px
-}
-  .card-title {
-    font-size: 20.8px;
-    width: 40.8%;
+  .reels-heading-add{
+    width:50%
   }
-  
-  .card-description {
-    font-size: 16.8px;
-    width: 260px;
-  }
-  
-  .manufacturing-logo {
-    width: 308px;
-    height: 208px;
-    transform:translate(-35.2%,-8.2%);
-  }
-  
-  .delivery-logo, .customer-logo {
-    width: 308px;
-    height: 208px;
-    transform:translate(0%,-103.2%);
-  }
-  
-  .address-section {
-    transform: translate(-98.2%,20.8%);
-  }
-  
-  .reels-heading-add {
-    font-size: 2.08rem;
-    width: 212px;
-    transform: translateX(-65.2%);
-  }
-  
   .map {
-    width: 50.8%;
-    height: 302px;
-    transform:translate(7.8%,0%);
+    width:90%;
+   height:350px
+   
   }
-  
   .home-footer {
     width: 62.8%;
     margin-left: -9.2rem;
@@ -4402,100 +3937,65 @@ transition: none;
   transition: none;
   opacity:1
 }
-   .specialties-header {
-  
-    gap: 10px;
-    transform:translateY(-50%)
-   
-}
-.specialties-content {
-    display: flex
-;
-    width: 460px;
-    padding: 40px 16px;
+   .specialties-content {
+    width: 100vw;
+    padding: 1.5rem 0.5rem;
+    margin-left: 0;
+  }
+  .specialties-title {
+    font-size: 1.6rem;
+    gap: 3rem;
+  }
+  .specialties-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    width:100%
+  }
+  .specialties-cards-wrapper {
+    gap: 1.2rem;
+  }
+  .specialty-card {
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
-    position: relative;
-    margin-left: -22%;
-}
-.specialties-title {
-    font-size: 1.5rem;
-    transform:translateX(2%);
-}
-.specialties-subtitle {
-   
-    font-size: 14px;
-    transform:translateX(4%);
-    width:45%
- 
-}
+    padding: 1.2rem 1rem;
+    gap: 0.5rem;
+    min-height: unset;
+    width: 100%;
+    height: auto;
+  }
+  .specialty-card-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  .specialty-card-content {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .specialty-card-content h3 {
+    font-size: 1.1rem;
+  }
+  .specialty-card-content p {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+  .specialty-card-image {
+    width: 100%;
+    height: 300px;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  
 
-.specialties-cards-wrapper {
-    
-    gap: 1rem;
-    transform:translateY(-5%);
-    
-}
-.specialties-cards-container {
-   
-   transform:translate(-10%,17%);
-    gap: 14rem;
-    
-}
-.specialty-card {
-    width: 80%;
-   
-    gap: 20px;
-  
-    height: 250px;
-    transform:translateY(-5%);
-    background-color:white;
-    border:none
-  
-}
 
-.card-title-container {
-  width:500px
-}
-  .card-title {
-    font-size: 20.8px;
-    width: 40.8%;
+  .reels-heading-add{
+    width:50%
   }
-  
-  .card-description {
-    font-size: 16.8px;
-    width: 252px;
-  }
-  
-  .manufacturing-logo {
-    width: 308px;
-    height: 208px;
-    transform:translate(-33.2%,-8.2%);
-  }
-  
-  .delivery-logo, .customer-logo {
-    width: 308px;
-    height: 208px;
-    transform:translate(2%,-103.2%);
-  }
-  
-  .address-section {
-    transform: translate(-98.2%,20.8%);
-  }
-  
-  .reels-heading-add {
-    font-size: 2.08rem;
-    width: 212px;
-    transform: translateX(-65.2%);
-  }
-  
   .map {
-    width: 50.8%;
-    height: 302px;
-    transform:translate(7.8%,0%);
+    width:90%;
+   height:350px
+   
   }
-  
   .home-footer {
     width: 62.8%;
     margin-left: -9.2rem;
@@ -4838,130 +4338,71 @@ transition: none;
   transition: none;
   opacity:1
 }
-.specialties-header {
-  
-    gap: 10px;
-    transform:translateY(-50%)
-   
-}
-.specialties-content {
-    display: flex
-;
-    width: 460px;
-    padding: 40px 16px;
+ .specialties-content {
+    width: 100vw;
+    padding: 1.5rem 0.5rem;
+    margin-left: 0;
+  }
+  .specialties-title {
+    font-size: 1.6rem;
+    gap: 3rem;
+  }
+  .specialties-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    width:100%
+  }
+  .specialties-cards-wrapper {
+    gap: 1.2rem;
+  }
+  .specialty-card {
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
-    position: relative;
-    margin-left: -22%;
-}
-.specialties-title {
-    font-size: 1.5rem;
-}
-.specialties-subtitle {
-   
-    font-size: 14px;
-    transform:translateX(-5%);
-    width:45%
- 
-}
-
-.specialties-cards-wrapper {
-    
-    gap: 1rem;
-    transform:translateY(-5%);
-    
-}
-.specialties-cards-container {
-   
-   transform:translate(-6%,17%);
-    gap: 14rem;
-    
-}
-.specialty-card {
-    width: 80%;
-   
-    gap: 20px;
-  
-    height: 250px;
-    transform:translateY(-5%);
-    background-color:white;
-    border:none
-  
-}
-
-.card-title-container {
-  width:500px
-}
-.card-title
- {
-  
-    font-size: 20px;
-    width:40%
-    
-}
-
-.card-description
- {
-    font-size: 16px;
-    width:250px
- 
-}
-.manufacturing-logo {
-   
-   
-    width: 300px;
-    height: 200px;
-    transform:translate(-45%,-10%);
-  
-}
-
-.delivery-logo {
-    
-    right: -15px;
-    top: -46px;
-    width: 300px;
-    height: 200px;
-    /* opacity:0; */
-     transform:translate(-6%,-115%);
-    
-}
-.customer-logo {
-  
-    right: -15px;
-    top: -46px;
-width: 300px;
-    height: 200px;
-    transform:translate(-6%,-115%);
-}
-.address-section {
-   
-    transform: translate(-100%,20%);
-
-}
-.reels-heading-add {
-   
-    font-size: 2rem;
-  
-    width: 204px;
-    height: 55px;
-    transform: translateX(-68%);
-    
-}
-.map {
-    
-    width: 50%;
+    padding: 1.2rem 1rem;
+    gap: 0.5rem;
+    min-height: unset;
+    width: 100%;
+    height: auto;
+  }
+  .specialty-card-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  .specialty-card-content {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .specialty-card-content h3 {
+    font-size: 1.1rem;
+  }
+  .specialty-card-content p {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+  .specialty-card-image {
+    width: 100%;
     height: 300px;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  
+
+
+  .reels-heading-add{
+    width:50%
+  }
+  .map {
+    width:90%;
+   height:350px
    
-    transform:translate(7%,0%);
-}
+  }
+
+
 .home-footer {
    
-    margin-top: 10rem;
-    width: 56%;
-   
-    gap: 1rem;
-    margin-left: -9.9rem;
+ 
+    
 }
 .foot-1-section {
     display: flex
