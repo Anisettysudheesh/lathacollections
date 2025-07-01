@@ -388,33 +388,33 @@ function Stores() {
             <div className="card">
               <div className="about-card-content">
                 <div className="store-card-title">🌟 Curated Collections</div>
-                <p className="card-description">
+                <div className="card-description">
                   Each store features carefully selected sarees that represent
                   the best of regional and traditional styles, ensuring you find
                   unique pieces not available elsewhere.
-                </p>
+                </div>
               </div>
             </div>
 
             <div className="card">
               <div className="about-card-content">
                 <div className="store-card-title">🎓 Expert Staff</div>
-                <p className="card-description">
+                <div className="card-description">
                   Our trained staff understands the nuances of different saree
                   styles, fabrics, and occasions, providing informed guidance
                   for your selection.
-                </p>
+                </div>
               </div>
             </div>
 
             <div className="card">
               <div className="about-card-content">
                 <div className="store-card-title">🏪 Comfortable Environment</div>
-                <p className="card-description">
+                <div className="card-description">
                   Spacious, well-lit stores with comfortable seating areas and
                   trial rooms designed to make your shopping experience pleasant
                   and relaxed.
-                </p>
+                </div>
               </div>
             </div>
           </div>

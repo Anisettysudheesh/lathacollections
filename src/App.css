@@ -27,7 +27,7 @@ body {
 
 /* Hero Section */
 .store-hero-section {
-  background: linear-gradient(135deg, #faf9f7 0%, #f0ede8 100%);
+  /* background: linear-gradient(135deg, #faf9f7 0%, #f0ede8 100%); */
   padding: 80px 24px;
   text-align: center;
   position: relative;
@@ -194,7 +194,7 @@ body {
 
 .card-description {
   color: #6d5d52;
-  font-size: 0.95rem;
+  font-size: 0.65rem;
   line-height: 1.5;
 }
 .store-map{

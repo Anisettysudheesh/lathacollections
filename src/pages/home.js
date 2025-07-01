@@ -78,7 +78,7 @@ const videoRef = useRef(null);
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      if (window.scrollY > lastScrollY.current && window.scrollY > 350) {
+      if (window.scrollY > lastScrollY.current && window.scrollY > 150) {
         // Scrolling down
         setHideHeader(true);
       } else {
@@ -199,7 +199,7 @@ const videoRef = useRef(null);
         {sidebarOpen && <div className="sidebar-overlay" onClick={closeSidebar}></div>}
 
         {/* Header with Hamburger Menu */}
-        <header className={`home-header${scrolled ? " scrolled" : ""}${hideHeader ? " hide" : ""}`}>
+        <div className={`home-header${scrolled ? " scrolled" : ""}${hideHeader ? " hide" : ""}`}>
           {/* Hamburger Menu Button */}
           <button className="hamburger-menu" onClick={toggleSidebar}>
             <span className="hamburger-line"></span>
@@ -241,7 +241,7 @@ const videoRef = useRef(null);
               Stores
             </Link>
           </nav>
-        </header> 
+        </div> 
 
       {/* Hero Section */}
       <div className="hero-section">
@@ -622,10 +622,7 @@ Handwoven in Uppada, these silk sarees flaunt airy elegance, intricate Jamdani a
                   loading="lazy"
                   title="Latha Collections Location"
                 ></iframe>
-          </div>
-
-          
-             <div className="home-footer">
+                  <div className="home-footer">
       <div className="foot-1-section">
         <h3>Privacy Policy</h3>
           <h3>Terms of Service</h3>
@@ -641,6 +638,10 @@ Handwoven in Uppada, these silk sarees flaunt airy elegance, intricate Jamdani a
       <div className="foot-3-section">
             © 2024 Latha Collections. All rights reserved.
         </div>
+          </div>
+
+          
+           
 
     </div>
 

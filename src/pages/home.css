@@ -1148,6 +1148,7 @@ transition: 0.4s ease-in-out;
   line-height: 21px;
   position: relative;
   margin: 0;
+  width:100%
 }
 .address-section{
   display:flex;
@@ -1967,25 +1968,6 @@ margin-bottom:2rem
 }
 /* 440px breakpoint */
 @media (max-width: 440px) {
-    .home-header,
-  .home-footer,
-  .specialties-content,
-  .specialties-section {
-    width: 100% !important;
-    max-width: 100vw !important;
-    margin-left: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    transform: none !important;
-    box-sizing: border-box;
-  }
-  .specialties-content,
-  .specialties-section {
-    min-width: 0 !important;
-  }
-  body {
-    overflow-x: hidden;
-  }
   .main-navigation {
     display: none !important;
   }
@@ -3221,25 +3203,6 @@ transition: none;
 } */
 /* 412px breakpoint */
 @media (max-width: 412px) {
-    .home-header,
-  .home-footer,
-  .specialties-content,
-  .specialties-section {
-    width: 100% !important;
-    max-width: 100vw !important;
-    margin-left: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    transform: none !important;
-    box-sizing: border-box;
-  }
-  .specialties-content,
-  .specialties-section {
-    min-width: 0 !important;
-  }
-  body {
-    overflow-x: hidden;
-  }
   .main-navigation {
     display: none !important;
   }
@@ -3595,17 +3558,29 @@ transition: none;
 }
 
 .card-title-container {
-  width:500px
+  width:100%
 }
   .card-title {
     font-size: 20.2px;
-    width: 39.2%;
+    width: 500px;
+  }
+  .card-content{
+    
   }
   
   .card-description {
     font-size: 16.2px;
-    width: 250px;
+    width: 300px;
   }
+  .card-description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    position: relative;
+    width:100%;
+    text-align: justify;
+}
   
   .manufacturing-logo {
     width: 295px;
@@ -3649,10 +3624,10 @@ width: 300px;
   }
   
   .home-footer {
-    width: 64.2%;
+    /* width: 100%; */
+    /* margin-left: -9.8rem; */
     gap:1rem;
-     margin-left:0;
-    transform: none
+    transform:translateX(25%)
   }
   .foot-1-section {
     display: flex;
@@ -3661,7 +3636,7 @@ width: 300px;
     gap: 2rem;
     margin-top: 1rem;
     margin-top: 1rem;
-   
+    width:100%
 }
 .foot-1-section h3 {
     font-size: 0.6rem;
@@ -4043,7 +4018,7 @@ transition: none;
   
   .card-description {
     font-size: 16.8px;
-    width: 252px;
+    width: 260px;
   }
   
   .manufacturing-logo {
@@ -4843,7 +4818,7 @@ transition: none;
   
   .card-description {
     font-size: 16.8px;
-    width: 252px;
+    width: 260px;
   }
   
   .manufacturing-logo {
