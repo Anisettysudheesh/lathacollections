@@ -199,7 +199,7 @@ const videoRef = useRef(null);
         {sidebarOpen && <div className="sidebar-overlay" onClick={closeSidebar}></div>}
 
         {/* Header with Hamburger Menu */}
-        <div className={`home-header${scrolled ? " scrolled" : ""}${hideHeader ? " hide" : ""}`}>
+        <header className={`home-header${scrolled ? " scrolled" : ""}${hideHeader ? " hide" : ""}`}>
           {/* Hamburger Menu Button */}
           <button className="hamburger-menu" onClick={toggleSidebar}>
             <span className="hamburger-line"></span>
@@ -241,7 +241,7 @@ const videoRef = useRef(null);
               Stores
             </Link>
           </nav>
-        </div> 
+        </header> 
 
       {/* Hero Section */}
       <div className="hero-section">

@@ -3570,7 +3570,8 @@ transition: none;
   
   .card-description {
     font-size: 16.2px;
-    width: 300px;
+    width: 350px;
+      text-align: justify;
   }
   .card-description-container {
     display: flex;
@@ -3579,7 +3580,7 @@ transition: none;
     align-self: stretch;
     position: relative;
     width:100%;
-    text-align: justify;
+  
 }
   
   .manufacturing-logo {
