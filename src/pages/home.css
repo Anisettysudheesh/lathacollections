@@ -1972,90 +1972,64 @@ transition: none;
   opacity:1
 }
   
-   .specialties-header {
-  
-    gap: 10px;
-    transform:translateY(-50%)
-   
-}
 .specialties-content {
-    display: flex
-;
-    width: 460px;
-    padding: 40px 16px;
+    width: 100vw;
+    padding: 1.5rem 0.5rem;
+    margin-left: 0;
+  }
+  .specialties-title {
+    font-size: 1.6rem;
+    gap: 3rem;
+  }
+  .specialties-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    width:100%
+  }
+  .specialties-cards-wrapper {
+    gap: 1.2rem;
+  }
+  .specialty-card {
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
-    position: relative;
-    margin-left: -22%;
-}
-.specialties-title {
-    font-size: 1.5rem;
-   
-}
-.specialties-subtitle {
-   
-    font-size: 14px;
-    transform:translateX(4%);
-    width:45%
- 
-}
+    padding: 1.2rem 1rem;
+    gap: 0.5rem;
+    min-height: unset;
+    width: 100%;
+    height: auto;
+  }
+  .specialty-card-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  .specialty-card-content {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .specialty-card-content h3 {
+    font-size: 1.1rem;
+  }
+  .specialty-card-content p {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+  .specialty-card-image {
+    width: 100%;
+    height: 300px;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  
 
-.specialties-cards-wrapper {
-    
-    gap: 1rem;
 
-    
-}
-.specialties-cards-container {
-   
-   transform:translate(-6%,17%);
-    gap: 14rem;
-    
-}
-.specialty-card {
-    width: 80%;
-   
-    gap: 20px;
-  
-    height: 250px;
-    transform:translateY(-5%);
-    background-color:white;
-    border:none
-  
-}
-
-.card-title-container {
-  width:500px
-}
-  .card-title {
-    font-size: 20.8px;
-    width: 40.8%;
+  .reels-heading-add{
+    width:50%
   }
-  
-  .card-description {
-    font-size: 16.8px;
-    width: 252px;
-  }
-  
-  .manufacturing-logo {
-    width: 308px;
-    height: 208px;
-    transform:translate(-33.2%,-8.2%);
-  }
-  
-  .delivery-logo, .customer-logo {
-    width: 358px;
-    height: 228px;
-    transform:translate(0%,-103.2%);
-  }
-  
-  
-  
-  
-  
   .map {
-  
+    width:90%;
+   height:350px
+   
   }
   .home-footer{
     gap:1rem

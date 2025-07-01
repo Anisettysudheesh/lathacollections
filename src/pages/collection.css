@@ -168,10 +168,7 @@ body{
    background-color: #fff8f1;
      /* position: relative;  */
 }
-.collections-heading{
-/* position:relative */
 
-}
 .collections-section h3{
   display:flex;
 justify-content: center;
@@ -1183,7 +1180,8 @@ $card-size: 23rem; */
   .col-video-back {
     width: 100%;
     height: 168px;
-    transform: translateY(-6.5%);
+    position:relative;
+    /* transform: translateY(-6.5%); */
   }
   
   .collections-section {
@@ -1195,8 +1193,9 @@ $card-size: 23rem; */
   .collections-section h3 {
     font-size: 5.8rem;
     width: 100%;
-    height: 63px;
-    top: 5.8rem;
+    position:absolute;
+    height: 63px; 
+   top: 5.8rem;
   }
   
   .col-saree1-box {
