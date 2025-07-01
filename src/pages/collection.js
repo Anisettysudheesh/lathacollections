@@ -62,6 +62,10 @@ import up1 from "../carasollogos/up1.webp"
 import up2 from "../carasollogos/up2.webp"
 import up3 from "../carasollogos/up3.webp"
 import up4 from "../carasollogos/up4.webp"
+import whatsapp from "../logos/whatsapp-icon.svg"
+import insta from "../logos/insta-icon.svg"
+import utube from "../logos/utube-icon.svg"
+
 
 
 const CARD_IMAGES1 = [
@@ -502,7 +506,7 @@ function Collection() {
 
 
             </div>
-                    <div className="collections-section">
+                    <div className="collections-section" style={{marginBottom:"2rem"}}>
               {/* <h3 className="collections-heading">Collections</h3> */}
 
 
@@ -527,6 +531,23 @@ function Collection() {
 
             </div>
                    
+                    <div className="home-footer">
+                         <div className="foot-1-section">
+                           <h3>Privacy Policy</h3>
+                             <h3>Terms of Service</h3>
+                               <h3>Shipping & Returns</h3>
+                   
+                         </div>
+                         <div className="foot-2-section">
+                          <a href="https://www.instagram.com/latha_collections9"><img src={insta}></img></a>
+                          <a href="https://www.youtube.com/@lathaCollections9"><img src={utube}></img></a> 
+                          <a href="https://chat.whatsapp.com/BMUUUdo0Fyi00X08fYepAu"><img src={whatsapp}></img></a> 
+                   
+                         </div>
+                         <div className="foot-3-section">
+                               © 2024 Latha Collections. All rights reserved.
+                           </div>
+                             </div>
             
      
     
