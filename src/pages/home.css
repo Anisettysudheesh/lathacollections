@@ -5,7 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 body{
-  font-family: "Inter"
+  font-family: "Inter";
+  
+    background-color: #fff8f1;
+
 
 }
 /* Hamburger Menu Button */
@@ -380,7 +383,8 @@ margin-left: 40px;
   opacity:0.2
 }
 .reels-background{
-  background-color:#fff8f1
+  background-color:#fff8f1;
+  padding-top:0.2rem
 }
  .reels-heading{
 display:flex;
@@ -414,7 +418,13 @@ gap:0.5rem
   position:relative;
   margin:3rem auto;
   background-color: #fff8f1;
+   /* opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  transition: 
+  opacity 0.7s cubic-bezier(0.4,0,0.2,1),
+   transform 0.7s cubic-bezier(0.4,0,0.2,1); */
 }
+
 /* .reel1-section-heading{
   font-size:2rem;
   display:flex;
@@ -476,7 +486,6 @@ border-radius:20px;
   display:flex;
   justify-content: center;
   align-items:center;
-  margin-top:3rem;
 border:3px solid  #DCC8AE;
 width:170px;
 height:39px;
@@ -489,7 +498,7 @@ padding:0.3rem
   top:20px;
   width:425px;
   height:430px;
-  background-color: #fff8f1;
+  background-color: #ffffff;
   opacity:0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -748,7 +757,7 @@ transition: 0.4s ease-in-out;
   top:20px;
   width:425px;
   height:430px;
-  background-color: #fff8f1;
+  background-color: #ffffff;
   opacity:0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1383,7 +1392,7 @@ margin-bottom:2rem
   .reel-info-1, .reel-info-2, .reel-info-3, .reel-info-4, .reel-info-5, .reel-info-6, .reel-info-7, .reel-info-8, .reel-info-9 {
     position: absolute;
     opacity: 0;
-    background-color: #fff8f1;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.371);
     pointer-events: none;
@@ -1457,7 +1466,7 @@ margin-bottom:2rem
   .reel-info-1, .reel-info-2, .reel-info-3, .reel-info-4, .reel-info-5, .reel-info-6, .reel-info-7, .reel-info-8, .reel-info-9 {
     position: absolute;
     opacity: 0;
-    background-color: #fff8f1;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.371);
     pointer-events: none;
@@ -1586,7 +1595,7 @@ margin-bottom:2rem
   .reel-info-1, .reel-info-2, .reel-info-3, .reel-info-4, .reel-info-5, .reel-info-6, .reel-info-7, .reel-info-8, .reel-info-9 {
     position: absolute;
     opacity: 0;
-    background-color: #fff8f1;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.371);
     pointer-events: none;
@@ -1650,18 +1659,24 @@ margin-bottom:2rem
     height: 280px;
     transform:translate(8%,-105%);
   }
+  .specialties-cards-wrapper{
+    transform:translateX(5%)
+  }
   
  
 
   
   .map {
+    width:80%
   
   }
   
   .home-footer {
   gap:1rem;
   }
-  
+    .foot-1-section {
+        gap: 4rem;
+    }
   .foot-1-section h3 {
     font-size: 1rem;
   }
@@ -1779,7 +1794,7 @@ margin-bottom:2rem
     position: static !important;
     opacity: 1 !important;
     transform: none !important;
-    background-color: #fff8f1;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.371);
     margin-top: 1.2rem;
@@ -1988,6 +2003,7 @@ transition: none;
   }
   .specialties-cards-wrapper {
     gap: 1.2rem;
+  margin-left:-20px
   }
   .specialty-card {
     flex-direction: column;
@@ -2155,7 +2171,7 @@ transition: none;
     position: static !important;
     opacity: 1 !important;
     transform: none !important;
-    background-color: #fff8f1;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.371);
     margin-top: 1.1rem;
@@ -2363,6 +2379,8 @@ transition: none;
   }
   .specialties-cards-wrapper {
     gap: 1.2rem;
+    margin-left:-10px;
+    padding-right:30px
   }
   .specialty-card {
     flex-direction: column;
@@ -2545,7 +2563,7 @@ transition: none;
     position: static !important;
     opacity: 1 !important;
     transform: none !important;
-    background-color: #fff8f1;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.371);
     margin-top: 1.02rem;
@@ -2757,6 +2775,9 @@ transition: none;
   }
   .specialties-cards-wrapper {
     gap: 1.2rem;
+    margin-left:-10px;
+    padding-right:30px
+  
   }
   .specialty-card {
     flex-direction: column;
@@ -3342,7 +3363,7 @@ transition: none;
     position: static !important;
     opacity: 1 !important;
     transform: none !important;
-    background-color: #fff8f1;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.371);
     margin-top: 0.95rem;
@@ -3719,7 +3740,7 @@ transition: none;
     position: static !important;
     opacity: 1 !important;
     transform: none !important;
-    background-color: #fff8f1;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.371);
     margin-top: 0.9rem;
@@ -3988,6 +4009,7 @@ transition: none;
 }
 /* 360px breakpoint */
 @media (max-width: 360px) {
+ 
   .main-navigation {
     display: none !important;
   }
@@ -4115,7 +4137,7 @@ transition: none;
     position: static !important; /* Remove absolute positioning */
     opacity: 1 !important; /* Always visible */
     transform: none !important; /* Remove transform */
-    background-color: #fff8f1;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.371);
     margin-top: 1rem; /* Add some spacing */
@@ -4351,10 +4373,10 @@ transition: none;
   }
   .specialty-card-content p {
     font-size: 0.95rem;
-    width: 100%;
+    width: 90%;
   }
   .specialty-card-image {
-    width: 100%;
+    width: 90%;
     height: 300px;
     margin-left: 0;
     margin-top: 0.5rem;
@@ -4379,11 +4401,10 @@ transition: none;
     
 }
 .foot-1-section {
-    display: flex
-;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 1rem;
     margin-top: 1rem;
 }
@@ -4514,7 +4535,7 @@ font-size: 0.6rem;
     position: static !important;
     opacity: 1 !important;
     transform: none !important;
-    background-color: #fff8f1;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.371);
     margin-top: 0.8rem;

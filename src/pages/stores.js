@@ -49,7 +49,7 @@ function Stores() {
         const handleScroll = () => {
           setScrolled(window.scrollY > 50);
     
-          if (window.scrollY > lastScrollY.current && window.scrollY > 350) {
+          if (window.scrollY > lastScrollY.current && window.scrollY > 50) {
             // Scrolling down
             setHideHeader(true);
           } else {
@@ -421,7 +421,7 @@ function Stores() {
         </section>
       </main>
 
-        <div className="store-home-footer">
+        {/* <div className="store-home-footer">
           <div className="foot-1-section">
             <h3>Privacy Policy</h3>
               <h3>Terms of Service</h3>
@@ -437,7 +437,24 @@ function Stores() {
           <div className="foot-3-section">
                 © 2024 Latha Collections. All rights reserved.
             </div>
-           </div> 
+           </div>  */}
+           <div className="home-footer">
+                 <div className="foot-1-section">
+                   <h3>Privacy Policy</h3>
+                     <h3>Terms of Service</h3>
+                       <h3>Shipping & Returns</h3>
+           
+                 </div>
+                 <div className="foot-2-section">
+                  <a href="https://www.instagram.com/latha_collections9"><img src={insta}></img></a>
+                  <a href="https://www.youtube.com/@lathaCollections9"><img src={utube}></img></a> 
+                  <a href="https://chat.whatsapp.com/BMUUUdo0Fyi00X08fYepAu"><img src={whatsapp}></img></a> 
+           
+                 </div>
+                 <div className="foot-3-section">
+                       © 2024 Latha Collections. All rights reserved.
+                   </div>
+                     </div>
     
     </div>
   );

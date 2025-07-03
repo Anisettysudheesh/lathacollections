@@ -198,7 +198,7 @@ function Collection() {
       const handleScroll = () => {
         setScrolled(window.scrollY > 50);
   
-        if (window.scrollY > lastScrollY.current && window.scrollY > 350) {
+        if (window.scrollY > lastScrollY.current && window.scrollY > 50) {
           // Scrolling down
           setHideHeader(true);
         } else {
