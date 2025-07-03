@@ -504,7 +504,7 @@ padding:0.3rem
   border-bottom-right-radius: 20px;
   z-index:-1;
     pointer-events: none;
-
+  transition:0.4s ease-in;
   box-shadow:1px 1px 10px 1px rgba(0, 0, 0, 0.371)
 
 
@@ -515,6 +515,7 @@ padding:0.3rem
  transition: 0.4s ease-in-out;
   transform:translateX(70%);
   right: auto;
+  pointer-events: auto !important;
 }
 .reel-1:hover ~ .reel-2,
 .reel-1:hover ~ .reel-3 {
@@ -548,7 +549,7 @@ transition: 0.4s ease-in-out;
   opacity:1;
   transform:translateX(70%);
   right: auto;
-    pointer-events: auto;
+    pointer-events: auto !important;
 }
 .reel-2:hover ~ .reel-3{
   opacity: 0.1;
@@ -675,6 +676,7 @@ border-radius:30px;
  transition: 0.4s ease-in-out;
   transform:translateX(70%);
   right: auto;
+  pointer-events: auto !important;
 }
 .reel-4:hover ~ .reel-5,
 .reel-4:hover ~ .reel-6 {
@@ -708,7 +710,7 @@ transition: 0.4s ease-in-out;
   opacity:1;
   transform:translateX(70%);
   right: auto;
-    pointer-events: auto;
+   pointer-events: auto !important;
 }
 .reel-5:hover ~ .reel-6{
   opacity: 0.1;
@@ -776,6 +778,7 @@ transition: 0.4s ease-in-out;
  transition: 0.4s ease-in-out;
   transform:translateX(70%);
   right: auto;
+  pointer-events: auto !important;
 }
 .reel-7:hover ~ .reel-8,
 .reel-7:hover ~ .reel-9 {
@@ -809,7 +812,7 @@ transition: 0.4s ease-in-out;
   opacity:1;
   transform:translateX(70%);
   right: auto;
-    pointer-events: auto;
+ pointer-events: auto !important;
 }
 .reel-8:hover ~ .reel-9{
   opacity: 0.1
