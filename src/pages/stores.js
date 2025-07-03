@@ -10,7 +10,7 @@ import mainlogo from "../logos/m and t.png"
 import whatsapp from "../logos/whatsapp-icon.svg"
 import insta from "../logos/insta-icon.svg"
 import utube from "../logos/utube-icon.svg"
-
+import tzyn from "../TZYN MARK.png"
 function Stores() {
   const [scrolled, setScrolled] = useState(false);
        const [hideHeader, setHideHeader] = useState(false);
@@ -454,6 +454,11 @@ function Stores() {
                  <div className="foot-3-section">
                        © 2024 Latha Collections. All rights reserved.
                    </div>
+                    <div className="footer-4-section">
+          <a href="https://tzynstudio.com"> <img src={tzyn} className="tzyn"></img></a>
+         
+
+        </div>
                      </div>
     
     </div>

@@ -28,7 +28,7 @@ import manufacturinglogo from "../footerlogos/manufacturinglogo.webp"
 import whatsapp from "../logos/whatsapp-icon.svg"
 import insta from "../logos/insta-icon.svg"
 import utube from "../logos/utube-icon.svg"
-
+import tzyn from "../TZYN MARK.png"
 
 function Home() {
 
@@ -309,7 +309,7 @@ masterful South Indian artistry for heirloom celebrations.            </p>
           <img src={batiksaree} style={{objectFit:"cover",width:"100%",height:"100%"}} alt="Reel 1"/>
           <div className="reel-info-4">
             <div className="reel-info-1-inner">
-                  <h3>Batik Sarees</h3>
+                  <h3>Batik</h3>
             <p>
 Batik sarees, crafted with ancient wax-resist art bold motifs, rustic hues, and artisanal charm blending heritage and modern flair for the truly expressive soul.            </p>
   <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
@@ -496,6 +496,11 @@ Handwoven in Uppada, these silk sarees flaunt airy elegance, intricate Jamdani a
       </div>
       <div className="foot-3-section">
             © 2024 Latha Collections. All rights reserved.
+        </div>
+        <div className="footer-4-section">
+          <a href="https://tzynstudio.com"> <img src={tzyn} className="tzyn"></img></a>
+         
+
         </div>
           </div>
 
