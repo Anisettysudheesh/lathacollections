@@ -1630,7 +1630,7 @@ margin-bottom:2rem
   
   .specialties-subtitle {
     font-size: 18px;
-    width: 70%;
+    width: 90%;
   }
   
   .specialty-card {
@@ -1999,7 +1999,7 @@ transition: none;
   .specialties-subtitle {
     font-size: 0.95rem;
     margin-bottom: 1.2rem;
-    width:100%
+    width:90%
   }
   .specialties-cards-wrapper {
     gap: 1.2rem;
@@ -2375,7 +2375,7 @@ transition: none;
   .specialties-subtitle {
     font-size: 0.95rem;
     margin-bottom: 1.2rem;
-    width:100%
+    width:90%
   }
   .specialties-cards-wrapper {
     gap: 1.2rem;
@@ -2771,7 +2771,7 @@ transition: none;
   .specialties-subtitle {
     font-size: 0.95rem;
     margin-bottom: 1.2rem;
-    width:100%
+    width:90%
   }
   .specialties-cards-wrapper {
     gap: 1.2rem;
@@ -3166,7 +3166,7 @@ transition: none;
   .specialties-subtitle {
     font-size: 0.95rem;
     margin-bottom: 1.2rem;
-    width:100%
+    width:90%
   }
   .specialties-cards-wrapper {
     gap: 1.2rem;
@@ -3568,7 +3568,7 @@ transition: none;
   .specialties-subtitle {
     font-size: 0.95rem;
     margin-bottom: 1.2rem;
-    width:100%
+    width:90%
   }
   .specialties-cards-wrapper {
     gap: 1.2rem;
@@ -3944,7 +3944,7 @@ transition: none;
   .specialties-subtitle {
     font-size: 0.95rem;
     margin-bottom: 1.2rem;
-    width:100%
+    width:90%
   }
   .specialties-cards-wrapper {
     gap: 1.2rem;
@@ -4346,7 +4346,7 @@ transition: none;
   .specialties-subtitle {
     font-size: 0.95rem;
     margin-bottom: 1.2rem;
-    width:100%
+    width:90%
   }
   .specialties-cards-wrapper {
     gap: 1.2rem;
@@ -4374,6 +4374,7 @@ transition: none;
   .specialty-card-content p {
     font-size: 0.95rem;
     width: 90%;
+
   }
   .specialty-card-image {
     width: 90%;
