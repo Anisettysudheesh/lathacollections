@@ -152,7 +152,7 @@ const videoRef = useRef(null);
             <span className="hamburger-line"></span>
             <span className="hamburger-line"></span>
           </button>
-
+          <Link to="/" style={{textDecoration:"none"}}>
           <div className="logo-brand-container">
             <img
               src={mainlogo}
@@ -163,6 +163,8 @@ const videoRef = useRef(null);
               <h1 className="brand-title">Latha Collections</h1>
             </Link>  
           </div>
+          </Link>
+          
 
           <nav className="main-navigation">
             {/* Existing navigation links */}
