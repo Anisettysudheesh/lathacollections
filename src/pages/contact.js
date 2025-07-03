@@ -225,7 +225,7 @@ function SocialIcons({ size = "20px" }) {
       {icons.map(({ src, alt, link }) => (
         <a href={link} key={alt} target="_blank" rel="noopener noreferrer">
           <div className="social-bubble" style={{ width: size, height: size, display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <img src={src} alt={alt} style={{ width: "100%", height: "100%" }} />
+            <img src={src} alt={alt} style={{ width: "30px", height: "30px" }} />
           </div>
         </a>
       ))}
