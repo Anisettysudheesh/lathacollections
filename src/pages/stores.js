@@ -155,7 +155,7 @@ function Stores() {
               </header> 
       
 
-      <main className="main-content">
+      <main className="store-main-content">
         {/* Hero Section */}
         <section className="store-hero-section">
           <div className="hero-content fade-in">
@@ -171,11 +171,11 @@ function Stores() {
         {/* Store Locator */}
         <section className="section">
           <div className="section-title">Find a Store Near You</div>
-          <p className="section-subtitle">
+          {/* <p className="section-subtitle">
             We have stores in major cities across India. Each location offers a
             unique selection of sarees and personalized service to help you find
             exactly what you're looking for.
-          </p>
+          </p> */}
 
           <div className="grid grid-2" style={{ gap: "32px" }}>
             {stores.map((store) => (

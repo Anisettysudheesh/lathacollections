@@ -258,8 +258,7 @@ Our curated collections reflect the rich heritage and craftsmanship of South Ind
                <h3> Premium Lehariya Georgette</h3>
             <p>
 Bursting with Rajasthani charm, Lehariya Georgette sarees show case vivid, hand-dyed wave patterns on airy fabric—ideal for festive flair and cultural elegance            </p>
-            <div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div>
-
+  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto" > Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
             </div>
            
           </div>
@@ -275,7 +274,7 @@ Bursting with Rajasthani charm, Lehariya Georgette sarees show case vivid, hand-
                <h3>100 Count </h3>
             <p>
 Crafted from premium superfine cotton, 100 Count sarees offer exceptional softness, featherlight comfort, and a smooth, elegant drape—perfect for refined daily wear.            </p>
-             <div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div>
+            <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
 
 
             </div>
@@ -292,8 +291,7 @@ Crafted from premium superfine cotton, 100 Count sarees offer exceptional softne
             <p>
 Mangalagiri’s famed silk sarees flaunt ultra-fine texture, opulent hues, iconic zari borders, fusing regal silk grace with 
 masterful South Indian artistry for heirloom celebrations.            </p>
-                         <div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div>
-
+  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
             </div>
           </div>
         </div>
@@ -314,8 +312,7 @@ masterful South Indian artistry for heirloom celebrations.            </p>
                   <h3>Batik Sarees</h3>
             <p>
 Batik sarees, crafted with ancient wax-resist art bold motifs, rustic hues, and artisanal charm blending heritage and modern flair for the truly expressive soul.            </p>
-             <div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div>
-
+  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
             </div>
         
           </div>
@@ -332,8 +329,7 @@ Batik sarees, crafted with ancient wax-resist art bold motifs, rustic hues, and 
             <p>
 Zari Kota sarees from Rajasthan blend with lightness royal elegance,
  featuring sheer checks and shimmering zarifor graceful daily wear and festive finesse.            </p>
-                           <div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div>
-
+  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
             </div>
            
           </div>
@@ -347,33 +343,13 @@ Zari Kota sarees from Rajasthan blend with lightness royal elegance,
               <h3>M&T Saree</h3>
             <p>
 M&T Sarees fuse bold contemporary style with timeless tradition, crafted with precision and flair—designed for the modern, confident woman rooted in rich cultural elegance.            </p>
-             <div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div>
-
+  <Link to="/collection"style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
             </div>
             
           </div>
         </div>
       </div> 
-          {/* <div className="auto-slider">
-        {images.map((img, idx) => (
-          <div
-            key={idx}
-            className={`image-container${slideIndex === idx ? " active" : ""}`}
-            style={{
-              display: slideIndex === idx ? "flex" : "none",
-              transition: "opacity 0.8s",
-            }}
-          >
-            <div className="image-back-conatiner">
-              <img className="image-back" style={{ objectFit: "cover" }} src={img.src} alt="" />
-            </div>
-            <div className="textonimage">{img.text}</div>
-          </div>
-        ))}
-      </div>
-      */}
-      {/* Reel 3 section */}
-       {/* Reels */}
+       
 
       <div className="showcase-box">
         <div 
@@ -389,8 +365,7 @@ M&T Sarees fuse bold contemporary style with timeless tradition, crafted with pr
             <p>
 Chanderi sarees, woven with delicate finesse, feature sheer texture,
  airy grace, and subtle shimmer—merging royal heritage with modern art elegance in every timeless drape.            </p>
-             <div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div>
-
+  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
             </div>
             
           </div>
@@ -406,8 +381,7 @@ Chanderi sarees, woven with delicate finesse, feature sheer texture,
               <h3>Zari Cotton</h3>
             <p>
 Zari Cotton sarees blend ultra-soft pure cotton with lustrous zari, featuring airy comfort and ornate borders—perfect for graceful daily elegance and festive brilliance.            </p>
-             <div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div>
-
+  <Link to="/collection"style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
             </div>
             
           </div>
@@ -422,8 +396,7 @@ Zari Cotton sarees blend ultra-soft pure cotton with lustrous zari, featuring ai
             <p>
 Handwoven in Uppada, these silk sarees flaunt airy elegance, intricate Jamdani artistry, and vivid designs embodying traditional
  grace and timeless brilliance.            </p>
-             <div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div>
- 
+  <Link to="/collection"style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link>  
             </div>
            
           </div>
