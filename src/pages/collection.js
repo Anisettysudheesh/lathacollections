@@ -66,6 +66,10 @@ import whatsapp from "../logos/whatsapp-icon.svg"
 import insta from "../logos/insta-icon.svg"
 import utube from "../logos/utube-icon.svg"
 import tzyn from "../TZYN MARK.png"
+import mg1 from "../carasollogos/mg (1).webp"
+import mg2 from "../carasollogos/mg (2).webp"
+import mg3 from "../carasollogos/mg (3).webp"
+import mg4 from "../carasollogos/mg (4).webp"
 
 
 const CARD_IMAGES1 = [
@@ -94,10 +98,10 @@ up3,
 up4
 ];
 const CARD_IMAGES5 = [
-mp1,
-mp2,
-mp3,  
-mp4
+mg1,
+mg2,
+mg3,
+mg4
 ];
 const CARD_IMAGES6 = [
   kota1,

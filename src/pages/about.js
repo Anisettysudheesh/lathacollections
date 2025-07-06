@@ -174,12 +174,12 @@ function About() {
                 <p className="about-section-text">
                   At Latha Collections, we believe in the timeless elegance of
                   sarees and the artistry behind their creation. Our philosophy
-                  centers on three core principles: 1. **Craftsmanship:** We are
+                  centers on three core principles: <b>1.Craftsmanship:</b> We are
                   committed to preserving traditional weaving techniques, passed
                   down through generations, while innovating with modern designs
-                  and materials. 2. **Quality:** We use only the finest
+                  and materials. <b>2.Quality:</b> We use only the finest
                   materials, ensuring that each saree is a masterpiece of
-                  quality and durability. 3. **Customer Satisfaction:** We
+                  quality and durability. <b>3.Customer Satisfaction:</b> We
                   strive to provide exceptional customer service, ensuring that
                   every purchase is a delightful experience.
                 </p>
