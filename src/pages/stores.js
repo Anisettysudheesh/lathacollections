@@ -20,7 +20,7 @@ function Stores() {
   const stores = [
     {
       id: 1,
-      name: "LathaCollections Kapuveedhi",
+      name: "Latha Collections - Kapuveedhi",
       address:
         "123 Fashion Street, Textile District, Mumbai, Maharashtra 400001",
       phone: "+91 98765 43210",
@@ -36,7 +36,7 @@ function Stores() {
     },
     {
       id: 2,
-      name: "Latha Collections -     R.K Nagar",
+      name: "Latha Collections - R.K Nagar",
       address: "456 Karol Bagh, Central Delhi, New Delhi 110005",
       phone: "+91 98765 43211",
       email: "delhi@lathacollections.com",

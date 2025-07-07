@@ -744,7 +744,7 @@ transition: 0.4s ease-in-out;
   transform:translateX(6%);
   right: auto;
   pointer-events: auto !important;
-  border-top-right-radius: 50px;
+
  }
 .reel-6-hovered-reel4-reel5 {
   transform: translateX(-30%);

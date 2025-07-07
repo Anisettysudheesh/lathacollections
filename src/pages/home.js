@@ -76,9 +76,9 @@ const videoRef = useRef(null);
 
    useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-
-      if (window.scrollY > lastScrollY.current && window.scrollY > 20) {
+      setScrolled(window.scrollY > 50);
+         if (window.scrollY > lastScrollY.current && window.scrollY > 100)
+           {
         // Scrolling down
         setHideHeader(true);
       } else {

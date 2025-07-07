@@ -152,7 +152,7 @@ function MainContent() {
         <p>We'd love to hear from you! Reach out via WhatsApp or social media.</p>
         <a
           className="whatsapp-btn"
-          href="https://wa.me/7989214262"
+          href="https://wa.me/6303195946"
           target="_blank"
           rel="noopener noreferrer"
           style={{ textDecoration: "none", color: "white" }}
@@ -163,7 +163,7 @@ function MainContent() {
       <section className="contact-info">
         <h3>Connect with Us</h3>
         <p>Email: support@lathacollections.com</p>
-        <p>Phone: +91 98765 43210</p>
+        <p>Phone: +91 63031 95946</p>
         <SocialIcons />
       </section>
       <Testimonials />
