@@ -8,8 +8,11 @@ body{
   font-family: "Inter";
   
     background-color: #fff8f1;
+ scroll-behavior: smooth;
 
-
+}
+html {
+  scroll-behavior: smooth;
 }
 /* Hamburger Menu Button */
 .hamburger-menu {

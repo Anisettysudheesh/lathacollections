@@ -2,8 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 body{
-  font-family: "Inter"
+  font-family: "Inter";
+   scroll-behavior: smooth;
 
+}
+html {
+  scroll-behavior: smooth;
 }
 /* About Page Styles */
 .about-container {

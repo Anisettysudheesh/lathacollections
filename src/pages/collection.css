@@ -1,5 +1,9 @@
 body{
   background-color: #fff8f1;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 .col-home-header {

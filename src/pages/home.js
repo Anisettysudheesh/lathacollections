@@ -74,23 +74,50 @@ const videoRef = useRef(null);
   };
 
 
-   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-         if (window.scrollY > lastScrollY.current && window.scrollY > 100)
-           {
-        // Scrolling down
-        setHideHeader(true);
-      } else {
-        // Scrolling up
-        setHideHeader(false);
-      }
-      lastScrollY.current = window.scrollY;
-    };
+  //  useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrolled(window.scrollY > 50);
+  //        if (window.scrollY > lastScrollY.current && window.scrollY > 100)
+  //          {
+  //       // Scrolling down
+  //       setHideHeader(true);
+  //     } else {
+  //       // Scrolling up
+  //       setHideHeader(false);
+  //     }
+  //     lastScrollY.current = window.scrollY;
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
+  useEffect(() => {
+  let ticking = false;
+  const threshold =10; // px before header hides
+
+  const handleScroll = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        setScrolled(window.scrollY > 1);
+
+        // Always show header when scrolling up
+        if (window.scrollY < lastScrollY.current) {
+          setHideHeader(false);
+        }
+        // Hide header only if scrolling down and past threshold
+        else if (window.scrollY > lastScrollY.current && window.scrollY > threshold) {
+          setHideHeader(true);
+        }
+        lastScrollY.current = window.scrollY;
+        ticking = false;
+      });
+      ticking = true;
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
   const enableVideoAudio = () => {
   if (videoRef.current) {
     videoRef.current.muted = false;
