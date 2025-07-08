@@ -21,10 +21,9 @@ function Stores() {
     {
       id: 1,
       name: "Latha Collections - Kapuveedhi",
-      address:
-        "123 Fashion Street, Textile District, Mumbai, Maharashtra 400001",
-      phone: "+91 98765 43210",
-      email: "mumbai@lathacollections.com",
+      address:"Kapu St, Ramji Nagar, Nellore, Andhra Pradesh-524001, India",
+      phone: "+91 63031 95946",
+      email: "lathacollections9@gmail.com",
       hours: "Mon-Sat: 10:00 AM - 9:00 PM, Sun: 11:00 AM - 7:00 PM",
       features: [
         "Full Collection",
@@ -37,9 +36,9 @@ function Stores() {
     {
       id: 2,
       name: "Latha Collections - R.K Nagar",
-      address: "456 Karol Bagh, Central Delhi, New Delhi 110005",
-      phone: "+91 98765 43211",
-      email: "delhi@lathacollections.com",
+      address: "R.K Nagar, Nellore, Andhra Pradesh-524001, India",
+      phone: "+91 63031 95946",
+      email: "lathacollections9@gmail.com",
       hours: "Mon-Sat: 10:00 AM - 8:30 PM, Sun: 11:00 AM - 7:00 PM",
       features: ["Curated Collection", "Personal Styling", "Gift Wrapping"],
       image: "/api/placeholder/400/300",

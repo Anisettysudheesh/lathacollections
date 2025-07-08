@@ -302,10 +302,10 @@ margin-bottom:10rem;
   margin-bottom:5rem
 }
 
-.about-cta-button:hover {
+/* .about-cta-button:hover {
   background: #009648;
   transform: translateY(-1px);
-}
+} */
 
 .about-cta-content {
   display: flex;
@@ -1535,7 +1535,7 @@ margin-bottom:10rem;
     height: 34px;
     padding: 0px 10px;
     border-radius: 6px;
-    width: 50%;
+    width: 60%;
     /* transform:translateY(50%); */
     /* margin-top:1rem; */
 
@@ -1543,8 +1543,8 @@ margin-bottom:10rem;
   }
   .about-cta-button:hover{
   background:#00a654;
-pointer-events: none !important;
-transform:none !important
+  transform: none;
+  pointer-events:auto;
   }
 
 
