@@ -664,7 +664,7 @@ html {
   .hero-subtitle {
     font-size: 1.2rem;
     margin-bottom: 24px;
-    max-width: 400px;
+    max-width: 700px;
   }
 
   .section {
@@ -783,17 +783,6 @@ html {
     padding: 6px 12px;
     font-size: 0.9rem;
   }
-  
-  .hero-title {
-    font-size: 1.7rem;
-    margin-bottom: 14px;
-  }
-
-  .hero-subtitle {
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-    max-width: 350px;
-  }
 }
 /* Mobile Medium (440px) */
 @media (max-width: 440px) {
@@ -802,12 +791,12 @@ html {
   }
 
   .hero-title {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     margin-bottom: 14px;
   }
 
   .hero-subtitle {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-bottom: 20px;
     max-width: 350px;
   }
@@ -886,12 +875,12 @@ html {
   }
 
   .hero-title {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-bottom: 12px;
   }
 
   .hero-subtitle {
-    font-size: 0.9rem;
+    font-size: 1.05rem;
     margin-bottom: 18px;
     max-width: 320px;
   }
@@ -969,14 +958,14 @@ html {
   }
 
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 10px;
   }
 
   .hero-subtitle {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 16px;
-    max-width: 300px;
+    max-width: 280px;
   }
 
   .section {
@@ -1007,17 +996,17 @@ html {
   .card-content {
     padding: 14px;
   }
-
-  .store-card-title {
-    font-size: 1.3rem;
-    margin-bottom: 4px;
+.about-card-content{
+  padding:10px;
+}
+ .store-card-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    width:300px
   }
 
   .card-description {
-    font-size: 0.9rem !important;
-    line-height: 1.3;
-    width:320px !important;
-    text-align:center
+    font-size:  0.8rem !important;
   }
 
   .store-map {
