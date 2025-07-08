@@ -765,6 +765,10 @@ margin-bottom:10rem;
     margin-left: 5px;
     margin-top: 5px;
   }
+  .about-cta-button:hover {
+  background:#00a654;
+  transform: none;
+}
 
   .about-main-content {
     padding: 16px 18px;
@@ -858,6 +862,10 @@ margin-bottom:10rem;
     width: 70px;
     height: 60px;
   }
+  .about-cta-button:hover {
+  background:#00a654;
+  transform: none;
+}
 
   .brand-title {
     font-size: 2.55rem;
@@ -1081,7 +1089,7 @@ margin-bottom:10rem;
   }
 
   .about-main-content {
-    padding: 10px 12px;
+    padding: 10px 25px;
     margin-top: 4.8rem;
   }
 
@@ -1149,11 +1157,15 @@ margin-bottom:10rem;
     padding: 0px 10px;
     border-radius: 6px;
     width: 50%;
-    transform:translateY(50%);
+    /* transform:translateY(50%); */
     margin-top:1rem;
 
    
   }
+  .about-cta-button:hover {
+  background:#00a654;
+  transform: none;
+}
 
   .about-cta-text {
     font-size: 10px;
@@ -1185,10 +1197,7 @@ margin-bottom:10rem;
     object-fit:fill
       /* border-radius:20px */
   }
-  .about-container{
-    /* transform:translateY(13%) */
 
-  }
   .about-content-container{
     transform:translateY(-1%)
   }
@@ -1314,7 +1323,7 @@ margin-bottom:10rem;
   }
 
   .about-main-content {
-    padding: 10px 12px;
+    padding: 10px 25px;
     margin-top: 4.8rem;
   }
 
@@ -1387,6 +1396,10 @@ margin-bottom:10rem;
 
    
   }
+  .about-cta-button:hover {
+  background:#00a654;
+  transform: none;
+}
 
   .about-cta-text {
     font-size: 10px;
@@ -1455,7 +1468,7 @@ margin-bottom:10rem;
   }
 
   .about-main-content {
-    padding: 10px 12px;
+    padding: 10px 25px;
     margin-top: 4.8rem;
   }
 
@@ -1523,11 +1536,17 @@ margin-bottom:10rem;
     padding: 0px 10px;
     border-radius: 6px;
     width: 50%;
-    transform:translateY(50%);
-    margin-top:1rem;
+    /* transform:translateY(50%); */
+    /* margin-top:1rem; */
 
    
   }
+  .about-cta-button:hover{
+  background:#00a654;
+pointer-events: none !important;
+transform:none !important
+  }
+
 
   .about-cta-text {
     font-size: 10px;

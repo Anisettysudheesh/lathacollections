@@ -98,7 +98,7 @@ const videoRef = useRef(null);
   const handleScroll = () => {
     if (!ticking) {
       window.requestAnimationFrame(() => {
-        setScrolled(window.scrollY > 1);
+        setScrolled(window.scrollY > 10);
 
         // Always show header when scrolling up
         if (window.scrollY < lastScrollY.current) {
