@@ -200,16 +200,35 @@
   .into{
     top:26vh
   }
+  .global-gif-left {
+  left: 35px;
+}
+.global-gif-right {
+  right: 20px
+}
+
 }
 @media(max-width:412px){
   .into{
     top:30vh
   }
+    .global-gif-left {
+  left: 35px;
+}
+.global-gif-right {
+  right: 20px
+}
 }
 @media(max-width:393px){
   .into{
     top:30%
   }
+      .global-gif-left {
+  left: 30px;
+}
+.global-gif-right {
+  right: 20px
+}
 }
 @media(max-width:360px){
   .into{
