@@ -162,8 +162,9 @@
 
   .into {
     font-size: 1.6rem;
-    top: 15px;
-    right: 5%;
+    /* Position relative to the image - top right corner */
+    top: calc(50% - 35vh + 10px);
+    right: calc(50% - 45vw + 10px);
     width: 48px;
     height: 48px;
     min-width: 48px;
@@ -204,8 +205,9 @@
 
   .into {
     font-size: 1.4rem;
-    top: 10px;
-    right: 5%;
+    /* Position relative to the image - top right corner */
+    top: calc(50% - 30vh + 10px);
+    right: calc(50% - 47.5vw + 60px);
     width: 44px;
     height: 44px;
     min-width: 44px;
@@ -237,7 +239,39 @@
     margin-top: 100px;
   }
 }
+@media(max-width:440px){
+      .into {
+    
+    top: calc(50% - 29vh );
+    right: calc(50% - 50vw + 50px);
+  }
+}
+@media(max-width:412px){
+    .into {
+    
+    top: calc(50% - 30vh );
+    right: calc(50% - 49vw + 30px);
+  }
 
+}
+@media(max-width:393px){
+    .into {
+    
+    top: calc(50% - 29vh );
+    right: calc(50% - 49vw + 20px);
+  }
+}
+@media(max-width: 360px) {
+ 
+
+  .into {
+    
+    top: calc(50% - 29vh );
+    right: calc(50% - 49vw + 6px);
+  }
+  
+ 
+    }
 @media (max-width: 320px) {
   .popup-image {
     width: 98vw;
@@ -246,8 +280,9 @@
 
   .into {
     font-size: 1.2rem;
-    top: 8px;
-    right: 3%;
+    /* Position relative to the image - top right corner */
+    top: calc(50% - 27.5vh + 6px);
+    right: calc(50% - 49vw + 6px);
     width: 40px;
     height: 40px;
     min-width: 40px;

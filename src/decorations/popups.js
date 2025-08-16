@@ -1,5 +1,5 @@
 import React from 'react';
-import popupimage from "./Community Tab (2).png"
+import popupimage from "./Community Tab (2).webp"
 function Popup() {
     return (
     <div className="popup">
