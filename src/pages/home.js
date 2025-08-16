@@ -2,15 +2,9 @@ import React,{useEffect, useState ,useRef} from "react";
 import { Link } from "react-router-dom";
 import "./home.css";
 import video from "../video/Firefly A detailed motion of camera showcasing a premium kanchi pattu gold saree in a cinematic way.mp4"
-import mainlogo from "../logos/m and t.png"
 import imageback from "../logos/kota2.png"
 import imageback2 from "../logos/leharia2.png"
 import imageback3 from "../logos/batik1.png"
-import collectionicon from "../logos/collectionicon.svg"
-import abouticon from "../logos/abouticon.svg" 
-import homeicon from "../logos/homeicon.svg"
-import storeicon from "../logos/storeicon.svg"
-import contacticon from "../logos/contacticon.svg"
 import lehariasaree from "../collectionlogos/LehariyaGeorgetteSarees.webp"
 
 import countsaree from "../collectionlogos/100countsaree.webp"
@@ -32,12 +26,8 @@ import tzyn from "../TZYN MARK.png"
 
 function Home() {
 
-   const [scrolled, setScrolled] = useState(false);
-   const [hideHeader, setHideHeader] = useState(false);
-  const lastScrollY = useRef(0);
-    const [hovered, setHovered] = useState(null);
+     const [hovered, setHovered] = useState(null);
      const [slideIndex, setSlideIndex] = useState(0);
-       const [sidebarOpen, setSidebarOpen] = useState(false); // Add this state
 const [videoPlaying, setVideoPlaying] = useState(false);
 const [audioEnabled, setAudioEnabled] = useState(false);
 const videoRef = useRef(null);
@@ -64,60 +54,10 @@ const videoRef = useRef(null);
   }, [images.length]);
 
 
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
-
-  // Close sidebar when clicking outside
-  const closeSidebar = () => {
-    setSidebarOpen(false);
-  };
+  // Sidebar functionality moved to global Header component
 
 
-  //  useEffect(() => {
-  //   const handleScroll = () => {
-  //     setScrolled(window.scrollY > 50);
-  //        if (window.scrollY > lastScrollY.current && window.scrollY > 100)
-  //          {
-  //       // Scrolling down
-  //       setHideHeader(true);
-  //     } else {
-  //       // Scrolling up
-  //       setHideHeader(false);
-  //     }
-  //     lastScrollY.current = window.scrollY;
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
-  useEffect(() => {
-  let ticking = false;
-  const threshold =10; // px before header hides
-
-  const handleScroll = () => {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        setScrolled(window.scrollY > 10);
-
-        // Always show header when scrolling up
-        if (window.scrollY < lastScrollY.current) {
-          setHideHeader(false);
-        }
-        // Hide header only if scrolling down and past threshold
-        else if (window.scrollY > lastScrollY.current && window.scrollY > threshold) {
-          setHideHeader(true);
-        }
-        lastScrollY.current = window.scrollY;
-        ticking = false;
-      });
-      ticking = true;
-    }
-  };
-
-  window.addEventListener("scroll", handleScroll, { passive: true });
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+  // Removed scroll functionality
   const enableVideoAudio = () => {
   if (videoRef.current) {
     videoRef.current.muted = false;
@@ -135,88 +75,7 @@ const videoRef = useRef(null);
 
         
     
-        {/* Sidebar */}
-        <div className={`sidebar ${sidebarOpen ? 'sidebar-open' : ''}`}>
-          <div className="sidebar-content">
-            <div className="sidebar-header">
-              <img src={mainlogo} alt="Logo" className="sidebar-logo" />
-              <h2 className="sidebar-title">Latha Collections</h2>
-              <button className="sidebar-close" onClick={closeSidebar}>×</button>
-            </div>
-            <nav className="sidebar-navigation">
-              <Link to="/" className="sidebar-nav-link" onClick={closeSidebar}>
-                <img src={homeicon} alt="" />
-                <span>Home</span>
-              </Link>
-              <Link to="/collection" className="sidebar-nav-link" onClick={closeSidebar}>
-                <img src={collectionicon} alt="" />
-                <span>Collections</span>
-              </Link>
-              <Link to="/about" className="sidebar-nav-link" onClick={closeSidebar}>
-                <img src={abouticon} alt="" />
-                <span>About Us</span>
-              </Link>
-              <Link to="/contact" className="sidebar-nav-link" onClick={closeSidebar}>
-                <img src={contacticon} alt="" />
-                <span>Contact</span>
-              </Link>
-              <Link to="/stores" className="sidebar-nav-link" onClick={closeSidebar}>
-                <img src={storeicon} alt="" />
-                <span>Stores</span>
-              </Link>
-            </nav>
-          </div>
-        </div>
-
-        {/* Sidebar Overlay */}
-        {sidebarOpen && <div className="sidebar-overlay" onClick={closeSidebar}></div>}
-
-        {/* Header with Hamburger Menu */}
-        <header className={`home-header${scrolled ? " scrolled" : ""}${hideHeader ? " hide" : ""}`}>
-          {/* Hamburger Menu Button */}
-          <button className="hamburger-menu" onClick={toggleSidebar}>
-            <span className="hamburger-line"></span>
-            <span className="hamburger-line"></span>
-            <span className="hamburger-line"></span>
-          </button>
-          <Link to="/" style={{textDecoration:"none"}}>
-          <div className="logo-brand-container">
-            <img
-              src={mainlogo}
-              alt="Latha Collections Logo"
-              className="logo-image"
-            />
-            <Link to="/" style={{textDecoration:"none"}}>
-              <h1 className="brand-title">Latha Collections</h1>
-            </Link>  
-          </div>
-          </Link>
-          
-
-          <nav className="main-navigation">
-            {/* Existing navigation links */}
-            <Link to="/" className="nav-link">
-              <img src={homeicon} style={{width:"18px", height:"18px"}} />
-              Home
-            </Link>
-            <Link to="/collection" className="nav-link">
-              <img src={collectionicon} style={{marginRight:"3px"}} />
-              Collections
-            </Link>
-            <Link to="/about" className="nav-link">
-              <img src={abouticon} style={{width:"20px", height:"20px", marginRight:"-5px"}} />
-              About Us
-            </Link>
-            <Link to="/contact" className="nav-link">
-              <img src={contacticon} style={{width:"20px", height:"20px"}} />
-              Contact
-            </Link>
-            <Link to="/stores" className="nav-link">
-              <img src={storeicon} style={{width:"18px", height:"18px"}} />
-              Stores
-            </Link>
-          </nav>
-        </header> 
+        {/* Header is now handled globally in App.js */} 
 
       {/* Hero Section */}
       <div className="hero-section">
@@ -285,7 +144,7 @@ Our curated collections reflect the rich heritage and craftsmanship of South Ind
                <h3> Premium Lehariya Georgette</h3>
             <p>
 Bursting with Rajasthani charm, Lehariya Georgette sarees show case vivid, hand-dyed wave patterns on airy fabric—ideal for festive flair and cultural elegance            </p>
-  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto" > Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
+  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto" > Explore Sarees <img alt="arrow" src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
             </div>
            
           </div>
@@ -301,7 +160,7 @@ Bursting with Rajasthani charm, Lehariya Georgette sarees show case vivid, hand-
                <h3>100 Count </h3>
             <p>
 Crafted from premium superfine cotton, 100 Count sarees offer exceptional softness, featherlight comfort, and a smooth, elegant drape—perfect for refined daily wear.            </p>
-            <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
+            <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img alt="arrow-symbol" src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
 
 
             </div>
@@ -318,7 +177,7 @@ Crafted from premium superfine cotton, 100 Count sarees offer exceptional softne
             <p>
 Mangalagiri’s famed silk sarees flaunt ultra-fine texture, opulent hues, iconic zari borders, fusing regal silk grace with 
 masterful South Indian artistry for heirloom celebrations.            </p>
-  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
+  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img alt="arrow-symbol" src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
             </div>
           </div>
         </div>
@@ -339,7 +198,7 @@ masterful South Indian artistry for heirloom celebrations.            </p>
                   <h3>Batik</h3>
             <p>
 Batik sarees, crafted with ancient wax-resist art bold motifs, rustic hues, and artisanal charm blending heritage and modern flair for the truly expressive soul.            </p>
-  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
+  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} alt="arrow-symbol" style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
             </div>
         
           </div>
@@ -356,7 +215,7 @@ Batik sarees, crafted with ancient wax-resist art bold motifs, rustic hues, and 
             <p>
 Zari Kota sarees from Rajasthan blend with lightness royal elegance,
  featuring sheer checks and shimmering zarifor graceful daily wear and festive finesse.            </p>
-  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
+  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} alt="arrow-symbol" style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
             </div>
            
           </div>
@@ -370,7 +229,7 @@ Zari Kota sarees from Rajasthan blend with lightness royal elegance,
               <h3>M&T Saree</h3>
             <p>
 M&T Sarees fuse bold contemporary style with timeless tradition, crafted with precision and flair—designed for the modern, confident woman rooted in rich cultural elegance.            </p>
-  <Link to="/collection"style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
+  <Link to="/collection"style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} alt="arrow-symbol" style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
             </div>
             
           </div>
@@ -392,7 +251,7 @@ M&T Sarees fuse bold contemporary style with timeless tradition, crafted with pr
             <p>
 Chanderi sarees, woven with delicate finesse, feature sheer texture,
  airy grace, and subtle shimmer—merging royal heritage with modern art elegance in every timeless drape.            </p>
-  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
+  <Link to="/collection" style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} alt="arrow-symbol"style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
             </div>
             
           </div>
@@ -408,7 +267,7 @@ Chanderi sarees, woven with delicate finesse, feature sheer texture,
               <h3>Zari Cotton</h3>
             <p>
 Zari Cotton sarees blend ultra-soft pure cotton with lustrous zari, featuring airy comfort and ornate borders—perfect for graceful daily elegance and festive brilliance.            </p>
-  <Link to="/collection"style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
+  <Link to="/collection"style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} alt="arrow-symbol" style={{height:"12px",marginLeft:"4px"}}></img></div></Link> 
             </div>
             
           </div>
@@ -423,7 +282,7 @@ Zari Cotton sarees blend ultra-soft pure cotton with lustrous zari, featuring ai
             <p>
 Handwoven in Uppada, these silk sarees flaunt airy elegance, intricate Jamdani artistry, and vivid designs embodying traditional
  grace and timeless brilliance.            </p>
-  <Link to="/collection"style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} style={{height:"12px",marginLeft:"4px"}}></img></div></Link>  
+  <Link to="/collection"style={{textDecoration:"none",color:"black"}}><div className="goto"> Explore Sarees <img src={arrow} alt="arrow-symbol" style={{height:"12px",marginLeft:"4px"}}></img></div></Link>  
             </div>
            
           </div>
@@ -465,7 +324,7 @@ Handwoven in Uppada, these silk sarees flaunt airy elegance, intricate Jamdani a
         <h3>Free Delivery</h3>
         <p>Enjoy complimentary shipping on all orders, delivered right to your doorstep.</p>
       </div>
-      <img className="specialty-card-image" src={deliverylogo} lt="Free Delivery" />
+      <img alt="delivery-logo" className="specialty-card-image" src={deliverylogo} lt="Free Delivery" />
     </div>
     <div className="specialty-card">
       <div className="specialty-card-icon">
@@ -516,16 +375,16 @@ Handwoven in Uppada, these silk sarees flaunt airy elegance, intricate Jamdani a
 
       </div>
       <div className="foot-2-section">
-       <a href="https://www.instagram.com/latha_collections9"><img src={insta}></img></a>
-       <a href="https://www.youtube.com/@lathaCollections9"><img src={utube}></img></a> 
-       <a href="https://chat.whatsapp.com/BMUUUdo0Fyi00X08fYepAu"><img src={whatsapp}></img></a> 
+       <a href="https://www.instagram.com/latha_collections9"><img alt="insta-icon" src={insta}></img></a>
+       <a href="https://www.youtube.com/@lathaCollections9"><img alt="youtube-icon" src={utube}></img></a> 
+       <a href="https://chat.whatsapp.com/BMUUUdo0Fyi00X08fYepAu"><img alt="whatsapp-icon" src={whatsapp}></img></a> 
 
       </div>
       <div className="foot-3-section">
             © 2024 Latha Collections. All rights reserved.
         </div>
         <div className="footer-4-section">
-          <a href="https://tzynstudio.com"> <img src={tzyn} className="tzyn"></img></a>
+          <a href="https://tzynstudio.com"> <img alt="tzyn" src={tzyn} className="tzyn"></img></a>
          
 
         </div>
@@ -548,18 +407,3 @@ Handwoven in Uppada, these silk sarees flaunt airy elegance, intricate Jamdani a
 }
 
 export default Home;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -3,18 +3,7 @@ import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import "./collection.css";
 import "../App.css";
-// import collection1 from "../logos/collection1.png";
-// import collection2 from "../logos/collection2.png";
-// import collection3 from "../logos/collection3.png";
-// import kota1 from "../logos/kota1.png";
-import mainlogo from "../logos/m and t.png";
-
-import { useEffect, useState,useRef } from "react";
-import collectionicon from "../logos/collectionicon.svg"
-import abouticon from "../logos/abouticon.svg" 
-import homeicon from "../logos/homeicon.svg"
-import storeicon from "../logos/storeicon.svg"
-import contacticon from "../logos/contacticon.svg"
+import { useEffect, useState } from "react";
 import kota from "../collectionlogos/KotaSaree.webp"
 import zaricotton from "../collectionlogos/zaricottonsaree.webp"
 import count from "../collectionlogos/100countsaree.webp"
@@ -71,61 +60,15 @@ import mg2 from "../carasollogos/mg (2).webp"
 import mg3 from "../carasollogos/mg (3).webp"
 import mg4 from "../carasollogos/mg (4).webp"
 
-
-const CARD_IMAGES1 = [
-kota1,
-kota2,
-kota3,
-kota4
-];
-const CARD_IMAGES2 = [
-zc1,
-zc2,
-zc3,
-zc4
-
-];
-const CARD_IMAGES3 = [
- kota1,
-kota2,
-kota3,
-kota4
-];
-const CARD_IMAGES4 = [
-up1,
-up2,
-up3,
-up4
-];
-const CARD_IMAGES5 = [
-mg1,
-mg2,
-mg3,
-mg4
-];
-const CARD_IMAGES6 = [
-  kota1,
-kota2,
-kota3,
-kota4
-];
-const CARD_IMAGES7 = [
- chan1,
-chan2,
-chan3,
-chan4
-];
-const CARD_IMAGES8 = [
-batik1,
-batik2,
-batik3,
-batik4
-];const CARD_IMAGES9 = [
-mt1,
-mt2,
-mt3,
-mt4
-];
+const CARD_IMAGES1 = [kota1, kota2, kota3, kota4];
+const CARD_IMAGES2 = [zc1, zc2, zc3, zc4];
+const CARD_IMAGES3 = [kota1, kota2, kota3, kota4];
+const CARD_IMAGES4 = [up1, up2, up3, up4];
+const CARD_IMAGES5 = [mg1, mg2, mg3, mg4];
+const CARD_IMAGES6 = [kota1, kota2, kota3, kota4];
+const CARD_IMAGES7 = [chan1, chan2, chan3, chan4];
+const CARD_IMAGES8 = [batik1, batik2, batik3, batik4];
+const CARD_IMAGES9 = [mt1, mt2, mt3, mt4];
 const MAX_VISIBILITY = 3;
 
 const Card = ({ image, alt }) => (
@@ -145,7 +88,6 @@ const Carousel = ({ children }) => {
     }, 3000); // Change 3000 to your preferred interval (ms)
     return () => clearInterval(interval);
   }, [count]);
-  
 
   return (
     <div className="carousel">
@@ -180,386 +122,195 @@ const Carousel = ({ children }) => {
 };
 
 function Collection() {
-  const [scrolled, setScrolled] = useState(false);
-     const [hideHeader, setHideHeader] = useState(false);
-    const lastScrollY = useRef(0);
-     const [hovered, setHovered] = useState(null);
-           const [sidebarOpen, setSidebarOpen] = useState(false); 
-  
+  const [hovered, setHovered] = useState(null);
 
-
-      const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
-
-  // Close sidebar when clicking outside
-  const closeSidebar = () => {
-    setSidebarOpen(false);
-  };
-
-
-     useEffect(() => {
-      const handleScroll = () => {
-        setScrolled(window.scrollY > 50);
-  
-        if (window.scrollY > lastScrollY.current && window.scrollY > 50) {
-          // Scrolling down
-          setHideHeader(true);
-        } else {
-          // Scrolling up
-          setHideHeader(false);
-        }
-        lastScrollY.current = window.scrollY;
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-
-
-
-
-
-
-      
-    }, []);
   return (
     <div className="app">
-        
-            {/* Sidebar */}
-                   <div className={`sidebar ${sidebarOpen ? 'sidebar-open' : ''}`}>
-                     <div className="sidebar-content">
-                       <div className="sidebar-header">
-                         <img src={mainlogo} alt="Logo" className="sidebar-logo" />
-                         <h2 className="sidebar-title">Latha Collections</h2>
-                         <button className="sidebar-close" onClick={closeSidebar}>×</button>
-                       </div>
-                       <nav className="sidebar-navigation">
-                         <Link to="/" className="sidebar-nav-link" onClick={closeSidebar}>
-                           <img src={homeicon} alt="" />
-                           <span>Home</span>
-                         </Link>
-                         <Link to="/collection" className="sidebar-nav-link" onClick={closeSidebar}>
-                           <img src={collectionicon} alt="" />
-                           <span>Collections</span>
-                         </Link>
-                         <Link to="/about" className="sidebar-nav-link" onClick={closeSidebar}>
-                           <img src={abouticon} alt="" />
-                           <span>About Us</span>
-                         </Link>
-                         <Link to="/contact" className="sidebar-nav-link" onClick={closeSidebar}>
-                           <img src={contacticon} alt="" />
-                           <span>Contact</span>
-                         </Link>
-                         <Link to="/stores" className="sidebar-nav-link" onClick={closeSidebar}>
-                           <img src={storeicon} alt="" />
-                           <span>Stores</span>
-                         </Link>
-                       </nav>
-                     </div>
-                   </div>
-           
-                   {/* Sidebar Overlay */}
-                   {sidebarOpen && <div className="sidebar-overlay" onClick={closeSidebar}></div>}
-           
-                   {/* Header with Hamburger Menu */}
-                   <header className={`home-header${scrolled ? " scrolled" : ""}${hideHeader ? " hide" : ""}`}>
-                     {/* Hamburger Menu Button */}
-                     <button className="hamburger-menu" onClick={toggleSidebar}>
-                       <span className="hamburger-line"></span>
-                       <span className="hamburger-line"></span>
-                       <span className="hamburger-line"></span>
-                     </button>
-           
-                     <div className="logo-brand-container">
-                       <img
-                         src={mainlogo}
-                         alt="Latha Collections Logo"
-                         className="logo-image"
-                       />
-                       <Link to="/" style={{textDecoration:"none"}}>
-                         <h1 className="brand-title">Latha Collections</h1>
-                       </Link>  
-                     </div>
-           
-                     <nav className="main-navigation">
-                       {/* Existing navigation links */}
-                       <Link to="/" className="nav-link">
-                         <img src={homeicon} style={{width:"18px", height:"18px"}} />
-                         Home
-                       </Link>
-                       <Link to="/collection" className="nav-link">
-                         <img src={collectionicon} style={{marginRight:"3px"}} />
-                         Collections
-                       </Link>
-                       <Link to="/about" className="nav-link">
-                         <img src={abouticon} style={{width:"20px", height:"20px", marginRight:"-5px"}} />
-                         About Us
-                       </Link>
-                       <Link to="/contact" className="nav-link">
-                         <img src={contacticon} style={{width:"20px", height:"20px"}} />
-                         Contact
-                       </Link>
-                       <Link to="/stores" className="nav-link">
-                         <img src={storeicon} style={{width:"18px", height:"18px"}} />
-                         Stores
-                       </Link>
-                     </nav>
-                   </header> 
-           
-            <div className="collections-section">
-              
-                   <video src={collectionsback} className="col-video-back"   
-                   autoPlay
-                 muted
-                  loop>
-                     
-                   </video>
-                   <h3 className="collections-heading">Collections</h3>
-                  
-              
+      <div className="collections-section">
+        <video src={collectionsback} className="col-video-back" autoPlay muted loop></video>
+        <h3 className="collections-heading">Collections</h3>
 
-                  <div className="col-saree1-box">
-                      <img className="col-saree9-img" src={mt}></img>
-                      <img className="col-saree9-img-hover" src={mthover}></img>
-                    
+        <div className="col-saree1-box">
+          <img className="col-saree9-img" src={mt}></img>
+          <img className="col-saree9-img-hover" src={mthover}></img>
+          <div className="col-saree1-matter">
+            <h4> M&T Sarees</h4>
+            <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
+              rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
+          </div>
+        </div>
 
-                      <div className="col-saree1-matter">
-                                <h4> M&T Sarees</h4>
-                                <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
-                                  rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
-                      </div>
+        <Carousel>
+          {CARD_IMAGES9.map((img, i) => (
+            <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
+          ))}
+        </Carousel>
+      </div>
 
-                  </div>
+      <div className="collections-section">
+        <div className="col-saree1-box">
+          <img className="col-saree8-img" src={batik}></img>
+          <img className="col-saree8-img-hover" src={batikhover}></img>
+          <div className="col-saree1-matter">
+            <h4> Batik Sarees</h4>
+            <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
+              rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
+          </div>
+        </div>
 
-                          <Carousel>
-                              {CARD_IMAGES9.map((img, i) => (
-                                <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
-                              ))}
-                            </Carousel>
+        <Carousel>
+          {CARD_IMAGES8.map((img, i) => (
+            <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
+          ))}
+        </Carousel>
+      </div>
 
+      <div className="collections-section">
+        <div className="col-saree1-box">
+          <img className="col-saree1-img" src={kota}></img>
+          <img className="col-saree1-img-hover" src={kotahover}></img>
+          <div className="col-saree1-matter" >
+            <h4> Kota Sarees</h4>
+            <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
+              rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
+          </div>
+        </div>
 
-            </div>
-              <div className="collections-section">
-              {/* <h3 className="collections-heading">Collections</h3> */}
+        <Carousel>
+          {CARD_IMAGES1.map((img, i) => (
+            <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
+          ))}
+        </Carousel>
+      </div>
 
+      <div className="collections-section">
+        <div className="col-saree1-box">
+          <img className="col-saree2-img" src={zaricotton}></img>
+          <img className="col-saree2-img-hover" src={zarihover}></img>
+          <div className="col-saree1-matter">
+            <h4> Zari Cotton Sarees</h4>
+            <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
+              rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
+          </div>
+        </div>
 
-                  <div className="col-saree1-box">
-                      <img className="col-saree8-img" src={batik}></img>
-                      <img className="col-saree8-img-hover" src={batikhover}></img>
-
-                      <div className="col-saree1-matter">
-                                <h4> Batik Sarees</h4>
-                                <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
-                                  rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
-                      </div>
-
-                  </div>
-
-                          <Carousel>
-                              {CARD_IMAGES8.map((img, i) => (
-                                <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
-                              ))}
-                            </Carousel>
-
-
-            </div>
-            <div className="collections-section">
-         
-
-
-                  <div className="col-saree1-box">
-                      <img className="col-saree1-img" src={kota}></img>
-                        <img className="col-saree1-img-hover" src={kotahover}></img>
-
-                      <div className="col-saree1-matter" >
-                                <h4> Kota Sarees</h4>
-                                <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
-                                  rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
-                      </div>
-
-                  </div>
-
-                          <Carousel>
-                              {CARD_IMAGES1.map((img, i) => (
-                                <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
-                              ))}
-                            </Carousel>
-
-
-            </div>
-              <div className="collections-section">
-              {/* <h3 className="collections-heading">Collections</h3> */}
-
-
-                  <div className="col-saree1-box">
-                      <img className="col-saree2-img" src={zaricotton}></img>
-                      <img className="col-saree2-img-hover" src={zarihover}></img>
-
-                      <div className="col-saree1-matter">
-                                <h4> Zari Cotton Sarees</h4>
-                                <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
-                                  rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
-                      </div>
-
-                  </div>
-
-                          <Carousel>
-                              {CARD_IMAGES2.map((img, i) => (
-                                <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
-                              ))}
-                            </Carousel>
-
-
-            </div>
-                
-                   <div className="collections-section">
-              {/* <h3 className="collections-heading">Collections</h3> */}
-
-
-                  <div className="col-saree1-box">
-                      <img className="col-saree4-img" src={uppada}></img>
-                      <img className="col-saree4-img-hover" src={uppadahover}></img>
-
-                      <div className="col-saree1-matter">
-                                <h4> Uppada Sarees</h4>
-                                <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
-                                  rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
-                      </div>
-
-                  </div>
-
-                          <Carousel>
-                              {CARD_IMAGES4.map((img, i) => (
-                                <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
-                              ))}
-                            </Carousel>
-
-
-            </div>
-                   <div className="collections-section">
-              {/* <h3 className="collections-heading">Collections</h3> */}
-
-
-                  <div className="col-saree1-box">
-                      <img className="col-saree5-img" src={mangalagiri}></img>
-                      <img className="col-saree5-img-hover" src={mangalagirihover}></img>
-
-                      <div className="col-saree1-matter">
-                                <h4> Mangalagiri Pattu Sarees</h4>
-                                <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
-                                  rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
-                      </div>
-
-                  </div>
-
-                          <Carousel>
-                              {CARD_IMAGES5.map((img, i) => (
-                                <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
-                              ))}
-                            </Carousel>
-
-
-            </div>
-                   <div className="collections-section">
-              {/* <h3 className="collections-heading">Collections</h3> */}
-
-
-                  <div className="col-saree1-box">
-                      <img className="col-saree6-img" src={lehariya}></img>
-                      <img className="col-saree6-img-hover" src={lehariyahover}></img>
-
-                      <div className="col-saree1-matter">
-                                <h4> Lehariya Sarees</h4>
-                                <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
-                                  rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
-                      </div>
-
-                  </div>
-
-                          <Carousel>
-                              {CARD_IMAGES6.map((img, i) => (
-                                <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
-                              ))}
-                            </Carousel>
-
-
-            </div>
-                   <div className="collections-section">
-              {/* <h3 className="collections-heading">Collections</h3> */}
-
-
-                  <div className="col-saree1-box">
-                      <img className="col-saree7-img" src={chanderi}></img>
-                      <img className="col-saree7-img-hover" src={chanderihover}></img>
-                      
-
-
-                      <div className="col-saree1-matter">
-                                <h4> Chanderi Sarees</h4>
-                                <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
-                                  rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
-                      </div>
-
-                  </div>
-
-                          <Carousel>
-                              {CARD_IMAGES7.map((img, i) => (
-                                <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
-                              ))}
-                            </Carousel>
-
-
-            </div>
-                    <div className="collections-section" style={{marginBottom:"2rem"}}>
-              {/* <h3 className="collections-heading">Collections</h3> */}
-
-
-                  <div className="col-saree1-box">
-                      <img className="col-saree3-img" src={count}></img>
-                      <img className="col-saree3-img-hover" src={counthover}></img>
-
-                      <div className="col-saree1-matter">
-                                <h4> 100 Count Sarees</h4>
-                                <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
-                                  rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
-                      </div>
-
-                  </div>
-
-                          <Carousel>
-                              {CARD_IMAGES3.map((img, i) => (
-                                <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
-                              ))}
-                            </Carousel>
-
-
-            </div>
-                   
-                    <div className="home-footer">
-                         <div className="foot-1-section">
-                           <h3>Privacy Policy</h3>
-                             <h3>Terms of Service</h3>
-                               <h3>Shipping & Returns</h3>
-                   
-                         </div>
-                         <div className="foot-2-section">
-                          <a href="https://www.instagram.com/latha_collections9"><img src={insta}></img></a>
-                          <a href="https://www.youtube.com/@lathaCollections9"><img src={utube}></img></a> 
-                          <a href="https://chat.whatsapp.com/BMUUUdo0Fyi00X08fYepAu"><img src={whatsapp}></img></a> 
-                   
-                         </div>
-                         <div className="foot-3-section">
-                               © 2024 Latha Collections. All rights reserved.
-                           </div>
-                                <div className="footer-4-section">
-                                     <a href="https://tzynstudio.com"> <img src={tzyn} className="tzyn"></img></a>
-                                    
-                           
-                                   </div>
-                             </div>
+        <Carousel>
+          {CARD_IMAGES2.map((img, i) => (
+            <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
+          ))}
+        </Carousel>
+      </div>
             
-     
-    
+      <div className="collections-section">
+        <div className="col-saree1-box">
+          <img className="col-saree4-img" src={uppada}></img>
+          <img className="col-saree4-img-hover" src={uppadahover}></img>
+          <div className="col-saree1-matter">
+            <h4> Uppada Sarees</h4>
+            <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
+              rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
+          </div>
+        </div>
+
+        <Carousel>
+          {CARD_IMAGES4.map((img, i) => (
+            <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
+          ))}
+        </Carousel>
+      </div>
+
+      <div className="collections-section">
+        <div className="col-saree1-box">
+          <img className="col-saree5-img" src={mangalagiri}></img>
+          <img className="col-saree5-img-hover" src={mangalagirihover}></img>
+          <div className="col-saree1-matter">
+            <h4> Mangalagiri Pattu Sarees</h4>
+            <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
+              rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
+          </div>
+        </div>
+
+        <Carousel>
+          {CARD_IMAGES5.map((img, i) => (
+            <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
+          ))}
+        </Carousel>
+      </div>
+
+      <div className="collections-section">
+        <div className="col-saree1-box">
+          <img className="col-saree6-img" src={lehariya}></img>
+          <img className="col-saree6-img-hover" src={lehariyahover}></img>
+          <div className="col-saree1-matter">
+            <h4> Lehariya Sarees</h4>
+            <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
+              rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
+          </div>
+        </div>
+
+        <Carousel>
+          {CARD_IMAGES6.map((img, i) => (
+            <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
+          ))}
+        </Carousel>
+      </div>
+
+      <div className="collections-section">
+        <div className="col-saree1-box">
+          <img className="col-saree7-img" src={chanderi}></img>
+          <img className="col-saree7-img-hover" src={chanderihover}></img>
+          <div className="col-saree1-matter">
+            <h4> Chanderi Sarees</h4>
+            <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
+              rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
+          </div>
+        </div>
+
+        <Carousel>
+          {CARD_IMAGES7.map((img, i) => (
+            <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
+          ))}
+        </Carousel>
+      </div>
+
+      <div className="collections-section" style={{marginBottom:"2rem"}}>
+        <div className="col-saree1-box">
+          <img className="col-saree3-img" src={count}></img>
+          <img className="col-saree3-img-hover" src={counthover}></img>
+          <div className="col-saree1-matter">
+            <h4> 100 Count Sarees</h4>
+            <p>Woven with finesse in the heart of Madhya Pradesh, Chanderi sarees are known for their sheer texture, lightweight feel, and 
+              rich, handwoven elegance. Adorned with traditional motifs and a subtle shimmer, these timeless drapes blend heritage with contemporary charm.</p>
+          </div>
+        </div>
+
+        <Carousel>
+          {CARD_IMAGES3.map((img, i) => (
+            <Card key={i} image={img}  alt={`Collection ${i + 1}`} />
+          ))}
+        </Carousel>
+      </div>
+                
+      <div className="home-footer">
+        <div className="foot-1-section">
+          <h3>Privacy Policy</h3>
+          <h3>Terms of Service</h3>
+          <h3>Shipping & Returns</h3>
+        </div>
+        <div className="foot-2-section">
+          <a href="https://www.instagram.com/latha_collections9"><img src={insta}></img></a>
+          <a href="https://www.youtube.com/@lathaCollections9"><img src={utube}></img></a> 
+          <a href="https://chat.whatsapp.com/BMUUUdo0Fyi00X08fYepAu"><img src={whatsapp}></img></a> 
+        </div>
+        <div className="foot-3-section">
+          © 2024 Latha Collections. All rights reserved.
+        </div>
+        <div className="footer-4-section">
+          <a href="https://tzynstudio.com">
+            <img src={tzyn} className="tzyn"></img>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

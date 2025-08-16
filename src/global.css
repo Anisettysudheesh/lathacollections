@@ -1,0 +1,265 @@
+.popup{
+  position:fixed;
+  z-index:10000;
+  width:100vw;
+  height:100vh;
+  display:none;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-image{
+    width:70vw;
+    height:90vh;
+    max-width:800px;
+    max-height:600px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    object-fit:contain;
+    border-radius:12px;
+}
+
+.into{
+    position:absolute;
+    top:20px;
+    right:10%;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 60000;
+    transition: all 0.3s ease;
+    /* Better mobile touch target */
+    min-width: 44px;
+    min-height: 44px;
+    /* Prevent text selection */
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    /* Ensure it's above everything */
+    pointer-events: auto;
+}
+
+.into:hover,
+.into:focus {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.into:active {
+    transform: scale(0.95);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.main {
+  display: block;
+  margin-top: 140px; /* Add margin to account for fixed header */
+}
+
+.main.hidden {
+  display: none;
+}
+
+.main.active {
+  display: block;
+  margin-top: 140px; /* Add margin to account for fixed header */
+}
+
+/* Fixed Header Styles */
+.fixed-header {
+  width: 100%;
+  height: 140px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #dadada;
+  gap: 0.3rem;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Global fixed GIFs visible across all pages */
+.global-gif-left {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 12px;
+  z-index: 50000;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+  transition: transform 0.3s ease;
+  background-color: transparent;
+}
+
+.global-gif-right {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 12px;
+  z-index: 50000;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+  transition: transform 0.3s ease;
+}
+
+.global-gif-left:hover,
+.global-gif-right:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive popup styles */
+@media (max-width: 1024px) {
+  .popup-image {
+    width: 80vw;
+    height: 80vh;
+  }
+
+  .into {
+    font-size: 1.8rem;
+    top: 15px;
+    right: 8%;
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    min-height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup-image {
+    width: 90vw;
+    height: 70vh;
+  }
+
+  .into {
+    font-size: 1.6rem;
+    top: 15px;
+    right: 5%;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    /* Larger touch target for tablets */
+  }
+  
+  .global-gif-left,
+  .global-gif-right {
+    width: 60px;
+    height: 60px;
+    top: 8px;
+  }
+
+  .global-gif-left {
+    left: 8px;
+  }
+
+  .global-gif-right {
+    right: 8px;
+  }
+  
+  .fixed-header {
+    height: 120px;
+  }
+  
+  .main,
+  .main.active {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-image {
+    width: 95vw;
+    height: 60vh;
+  }
+
+  .into {
+    font-size: 1.4rem;
+    top: 10px;
+    right: 5%;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    /* Optimal mobile touch target size */
+  }
+  
+  .global-gif-left,
+  .global-gif-right {
+    width: 50px;
+    height: 50px;
+    top: 6px;
+  }
+
+  .global-gif-left {
+    left: 6px;
+  }
+
+  .global-gif-right {
+    right: 6px;
+  }
+  
+  .fixed-header {
+    height: 100px;
+  }
+  
+  .main,
+  .main.active {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 320px) {
+  .popup-image {
+    width: 98vw;
+    height: 55vh;
+  }
+
+  .into {
+    font-size: 1.2rem;
+    top: 8px;
+    right: 3%;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+  
+  .fixed-header {
+    height: 90px;
+  }
+  
+  .main,
+  .main.active {
+    margin-top: 90px;
+  }
+}
