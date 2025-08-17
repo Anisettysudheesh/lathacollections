@@ -58,16 +58,17 @@ function App() {
 
   return (
     <div>
-      {/* Fixed GIFs visible across all pages */}
-      <img src={mothersDay} alt="Mother's Day" className="global-gif-left" />
-      <img src={mothersDay} alt="Mother's Day" className="global-gif-right" />
+      {/* left and right pots decorations */}
+      {/* <img src={mothersDay} alt="Mother's Day" className="global-gif-left" />
+      <img src={mothersDay} alt="Mother's Day" className="global-gif-right" /> */}
 
       <BrowserRouter>
         <ScrollToTop />
         {/* Global Fixed Header */}
         <Header />
 
-        <Popup />
+        {/* the popup window is displayed first on website */}
+        {/* <Popup /> */}
         <RoutesHandler />
       </BrowserRouter>
 
