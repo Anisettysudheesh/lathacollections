@@ -30,23 +30,23 @@ function Header() {
           </div>
           <nav className="sidebar-navigation">
             <Link to="/" className="sidebar-nav-link" onClick={closeSidebar}>
-              <img src={homeicon} alt="" />
+              <img src={homeicon} alt="Home" />
               <span>Home</span>
             </Link>
             <Link to="/collection" className="sidebar-nav-link" onClick={closeSidebar}>
-              <img src={collectionicon} alt="" />
+              <img src={collectionicon} alt="Collections" />
               <span>Collections</span>
             </Link>
             <Link to="/about" className="sidebar-nav-link" onClick={closeSidebar}>
-              <img src={abouticon} alt="" />
+              <img src={abouticon} alt="About Us" />
               <span>About Us</span>
             </Link>
             <Link to="/contact" className="sidebar-nav-link" onClick={closeSidebar}>
-              <img src={contacticon} alt="" />
+              <img src={contacticon} alt="Contact" />
               <span>Contact</span>
             </Link>
             <Link to="/stores" className="sidebar-nav-link" onClick={closeSidebar}>
-              <img src={storeicon} alt="" />
+              <img src={storeicon} alt="Stores" />
               <span>Stores</span>
             </Link>
           </nav>
@@ -65,38 +65,36 @@ function Header() {
           <span className="hamburger-line"></span>
         </button>
         
-        <Link to="/" style={{textDecoration:"none"}}>
+        <Link to="/" className="brand-link">
           <div className="logo-brand-container">
             <img
               src={mainlogo}
               alt="Latha Collections Logo"
               className="logo-image"
             />
-            <Link to="/" style={{textDecoration:"none"}}>
-              <h1 className="brand-title">Latha Collections</h1>
-            </Link>  
+            <h1 className="brand-title">Latha Collections</h1>
           </div>
         </Link>
 
         <nav className="main-navigation">
           <Link to="/" className="nav-link">
-            <img alt="home-icon" src={homeicon} style={{width:"18px", height:"18px"}} />
+            <img alt="Home" src={homeicon} className="nav-icon nav-icon--18" />
             Home
           </Link>
           <Link to="/collection" className="nav-link">
-            <img alt="collection-icon" src={collectionicon} style={{marginRight:"3px"}} />
+            <img alt="Collections" src={collectionicon} className="nav-icon nav-icon--mr-3" />
             Collections
           </Link>
           <Link to="/about" className="nav-link">
-            <img alt="about-icon" src={abouticon} style={{width:"20px", height:"20px", marginRight:"-5px"}} />
+            <img alt="About Us" src={abouticon} className="nav-icon nav-icon--20 nav-icon--tight" />
             About Us
           </Link>
           <Link to="/contact" className="nav-link">
-            <img alt="contact-icon" src={contacticon} style={{width:"20px", height:"20px"}} />
+            <img alt="Contact" src={contacticon} className="nav-icon nav-icon--20" />
             Contact
           </Link>
           <Link to="/stores" className="nav-link">
-            <img alt="store-icon" src={storeicon} style={{width:"18px", height:"18px"}} />
+            <img alt="Stores" src={storeicon} className="nav-icon nav-icon--18" />
             Stores
           </Link>
         </nav>

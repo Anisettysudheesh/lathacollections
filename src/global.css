@@ -136,6 +136,23 @@
   transform: scale(1.05);
 }
 
+/* Header nav icon utilities */
+.brand-link { text-decoration: none; }
+.nav-icon { display: inline-block; vertical-align: middle; }
+.nav-icon--18 { width: 18px; height: 18px; }
+.nav-icon--20 { width: 20px; height: 20px; }
+.nav-icon--mr-3 { margin-right: 3px; }
+.nav-icon--tight { margin-right: -5px; }
+
+/* Prevent double top spacing on pages with their own padding */
+.main .content { padding-top: 0 !important; }
+
+/* Normalize footer width to avoid horizontal overflow */
+.home-footer { width: 100% !important; margin-left: 0 !important; }
+
+/* Utility: fill container with cover */
+.fill-cover { object-fit: cover; width: 100%; height: 100%; }
+
 /* Responsive popup styles */
 @media (max-width: 1024px) {
   .popup-image {
