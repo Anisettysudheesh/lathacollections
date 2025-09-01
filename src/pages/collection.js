@@ -127,8 +127,14 @@ function Collection() {
   return (
     <div className="app">
       <div className="collections-section">
-        <video src={collectionsback} className="col-video-back" autoPlay muted loop></video>
+        <div className="col-video-heading">
+          <video src={collectionsback} className="col-video-back" autoPlay muted loop>
+           
+        </video>
         <h3 className="collections-heading">Collections</h3>
+        </div>
+        
+       
 
         <div className="col-saree1-box">
           <img className="col-saree9-img" src={mt}></img>
