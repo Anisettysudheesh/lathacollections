@@ -78,11 +78,7 @@ function About() {
                     From our humble beginnings in Nellore, Latha Collections has
                     evolved into a trusted name in sarees. Our growth is a
                     testament to our dedication to quality and customer
-                    satisfaction. We have expanded to two branches, serving a
-                    wider clientele, and are now preparing to open a new store in
-                    Vijayawada. This expansion marks a significant milestone in
-                    our journey, allowing us to share our passion for sarees with
-                    more customers.
+                    satisfaction. 
                   </p>
                 </div>
 
